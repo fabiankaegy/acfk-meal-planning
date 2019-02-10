@@ -1,4 +1,4 @@
-# acfk-recipes-frontend
+# acfk-meal-planning
 
 A meal planning site that allows you to create your meal plan for the next week from a list of stored recipes.
 
