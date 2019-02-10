@@ -32,7 +32,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run deploy`
+
+Takes the contents of the build directory and pushes them to the `gh-pages` branch. This will result in the site being deployed to the url: [https://fabiankaegy.github.io/acfk-meal-planning/](https://fabiankaegy.github.io/acfk-meal-planning/)
 
 ### `npm run eject`
 
