@@ -29,7 +29,7 @@ action "Deploy Test" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Build"]
   secrets = ["GITHUB_TOKEN"]
-  args = "run ghdeploy -u process.env.GITHUB_USERNAME -p process.env.GITHUB_TOKEN"
+  args = "run deploy -u process.env.GITHUB_USERNAME -p process.env.GITHUB_TOKEN"
   env = {
     USERNAME = "fabiankaegy"
   }
