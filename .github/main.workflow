@@ -29,8 +29,7 @@ action "Deploy Test" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Build"]
   secrets = ["GITHUB_TOKEN"]
-  args = "run deploy --repo 'https://' + process.env.GITHUB_TOKEN + '@github.com/fabiankaegy/acfk-meal-planning.git',
-  --silent true"
+  args = "run deploy --repo 'https://' + process.env.GITHUB_TOKEN + '@github.com/fabiankaegy/acfk-meal-planning.git' --silent true"
   env = {
     USERNAME = "fabiankaegy"
   }
