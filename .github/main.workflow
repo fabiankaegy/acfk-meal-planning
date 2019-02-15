@@ -3,7 +3,6 @@ workflow "Deploy Master" {
   resolves = [
     "Filters for GitHub Actions",
     "Deploy Test",
-    "Git Set User Name",
   ]
 }
 
