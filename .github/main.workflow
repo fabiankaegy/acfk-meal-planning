@@ -1,6 +1,12 @@
 workflow "Deploy Master" {
   on = "push"
-  resolves = ["Deploy the App"]
+  resolves = ["Master"]
+}
+
+action "Master" {
+  uses = "actions/bin/filter@46ffca7632504e61db2d4cb16be1e80f333cb859"
+  needs = ["Deploy the App"]
+  args = "branch master"
 }
 
 action "Install node modules" {
@@ -19,3 +25,4 @@ action "Deploy the App" {
   needs = ["Build the App"]
   args = "run deploy"
 }
+
