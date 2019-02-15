@@ -13,6 +13,7 @@ name: `acfk_recipes`
 |----------------------|---------------|----------|
 | `acfk_prep_time`     | int (seconds) | true     |
 | `acfk_cooking_time`  | int (seconds) | true     |
+| `acfk_description`   | string        | true     |
 | `acfk_ingredients`   | string        | true     |
 | `acfk_servings`      | int           | true     |
 | `acfk_prep_time`     | int (seconds) | true     |
