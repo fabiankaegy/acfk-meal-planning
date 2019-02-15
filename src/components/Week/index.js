@@ -14,7 +14,7 @@ class Week extends React.Component {
                 },
                 {
                     id: 1,
-                    name: 'Tuseday',
+                    name: 'Tuesday',
                     recipes: [],
                 },
                 {
@@ -24,7 +24,7 @@ class Week extends React.Component {
                 },
                 {
                     id: 3,
-                    name: 'Thurseday',
+                    name: 'Thursday',
                     recipes: [],
                 },
                 {

@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Week Component matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Week />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={0}
+          recipes={
+            Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+            ]
+          }
+          removeRecipe={[Function]}
+          title="Monday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={1}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Tuesday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={2}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Wednesday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={3}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Thursday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={4}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Friday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={5}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Saturday"
+        />,
+        <Day
+          addRecipe={[Function]}
+          clearRecipes={[Function]}
+          id={7}
+          recipes={Array []}
+          removeRecipe={[Function]}
+          title="Sunday"
+        />,
+      ],
+      "className": "week",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 0,
+          "recipes": Array [
+            1,
+            2,
+            3,
+            4,
+            5,
+          ],
+          "removeRecipe": [Function],
+          "title": "Monday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 1,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Tuesday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 2,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Wednesday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 3,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Thursday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 4,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Friday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 5,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Saturday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "function",
+        "props": Object {
+          "addRecipe": [Function],
+          "clearRecipes": [Function],
+          "id": 7,
+          "recipes": Array [],
+          "removeRecipe": [Function],
+          "title": "Sunday",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={0}
+            recipes={
+              Array [
+                1,
+                2,
+                3,
+                4,
+                5,
+              ]
+            }
+            removeRecipe={[Function]}
+            title="Monday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={1}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Tuesday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={2}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Wednesday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={3}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Thursday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={4}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Friday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={5}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Saturday"
+          />,
+          <Day
+            addRecipe={[Function]}
+            clearRecipes={[Function]}
+            id={7}
+            recipes={Array []}
+            removeRecipe={[Function]}
+            title="Sunday"
+          />,
+        ],
+        "className": "week",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 0,
+            "recipes": Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+            ],
+            "removeRecipe": [Function],
+            "title": "Monday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 1,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Tuesday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 2,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Wednesday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 3,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Thursday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 4,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Friday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 5,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Saturday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "function",
+          "props": Object {
+            "addRecipe": [Function],
+            "clearRecipes": [Function],
+            "id": 7,
+            "recipes": Array [],
+            "removeRecipe": [Function],
+            "title": "Sunday",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
