@@ -36,7 +36,7 @@ action "Deploy Test" {
 }
 
 action "Git Set User Email" {
-  uses = "Git"
+  uses = "./.github/entrypoint.sh"
   needs = ["Build"]
   args = "git config --global user.email process.env.EMAIL"
   env = {
@@ -45,7 +45,7 @@ action "Git Set User Email" {
 }
 
 action "Git Set User Name" {
-  uses = "Git"
+  uses = "./.github/entrypoint.sh"
   args = "git config --global user.name process.env.NAME"
   env = {
     NAME = "GitHub Actions"
