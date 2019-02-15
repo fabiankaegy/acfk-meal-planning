@@ -27,28 +27,11 @@ action "Build" {
 
 action "Deploy Test" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["Git Set User Name"]
+  needs = ["Build"]
   secrets = ["GITHUB_TOKEN"]
-  args = "run deploy -u process.env.GITHUB_USERNAME -p process.env.GITHUB_TOKEN"
+  args = "run deploy --repo 'https://' + process.env.GITHUB_TOKEN + '@github.com/fabiankaegy/acfk-meal-planning.git',
+  --silent true"
   env = {
     USERNAME = "fabiankaegy"
   }
-}
-
-action "Git Set User Email" {
-  uses = "./.github/entrypoint.sh"
-  needs = ["Build"]
-  args = "git config --global user.email process.env.EMAIL"
-  env = {
-    EMAIL = "fabian@arvernus.info"
-  }
-}
-
-action "Git Set User Name" {
-  uses = "./.github/entrypoint.sh"
-  args = "git config --global user.name process.env.NAME"
-  env = {
-    NAME = "GitHub Actions"
-  }
-  needs = ["Git Set User Email"]
 }
