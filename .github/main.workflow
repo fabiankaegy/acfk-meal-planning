@@ -3,7 +3,7 @@ workflow "Deploy Master" {
   resolves = [
     "Filters for GitHub Actions",
     "Deploy Test",
-    "Build",
+    "Git Set User Name",
   ]
 }
 
@@ -27,10 +27,28 @@ action "Build" {
 
 action "Deploy Test" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["Build"]
+  needs = ["Git Set User Name"]
   secrets = ["GITHUB_TOKEN"]
   args = "run deploy -u process.env.GITHUB_USERNAME -p process.env.GITHUB_TOKEN"
   env = {
     USERNAME = "fabiankaegy"
   }
+}
+
+action "Git Set User Email" {
+  uses = "Git"
+  needs = ["Build"]
+  args = "git config --global user.email process.env.EMAIL"
+  env = {
+    EMAIL = "fabian@arvernus.info"
+  }
+}
+
+action "Git Set User Name" {
+  uses = "Git"
+  args = "git config --global user.name process.env.NAME"
+  env = {
+    NAME = "GitHub Actions"
+  }
+  needs = ["Git Set User Email"]
 }
