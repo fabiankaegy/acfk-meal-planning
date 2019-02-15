@@ -1,0 +1,24 @@
+.day {
+    background-color: #E5E5E5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    height: 100%;
+    .header {
+        background-color: #CDE663;
+        padding: 15px 20px;
+        color: black;
+        border-radius: 15px 15px 0px 0px;
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .recipes {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        > * {
+            margin-bottom: 20px;
+        }
+    }
+}
