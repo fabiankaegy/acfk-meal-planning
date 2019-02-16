@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Week from '../Week';
-import './style.scss';
+import React, { Component } from "react";
+import Week from "../Week";
+import "./style.scss";
 
 class App extends Component {
   render() {
