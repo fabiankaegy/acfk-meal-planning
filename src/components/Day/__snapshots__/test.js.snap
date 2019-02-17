@@ -17,37 +17,18 @@ Object {
         </header>
         <div
           class="recipes"
+          data-testid="recipes"
+        />
+        <button
+          data-testid="add-recipe-button"
         >
-          <button>
-            Add Recipe
-          </button>
-          <button>
-            Remove Recipe
-          </button>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div
-        class="day"
-      >
-        <header
-          class="header"
+          Add Recipe
+        </button>
+        <button
+          data-testid="remove-recipe-button"
         >
-          <h2>
-            Title
-          </h2>
-        </header>
-        <div
-          class="recipes"
-        >
-          <button>
-            Add Recipe
-          </button>
-          <button>
-            Remove Recipe
-          </button>
-        </div>
+          Remove Recipe
+        </button>
       </div>
     </div>
   </body>,
@@ -64,14 +45,18 @@ Object {
       </header>
       <div
         class="recipes"
+        data-testid="recipes"
+      />
+      <button
+        data-testid="add-recipe-button"
       >
-        <button>
-          Add Recipe
-        </button>
-        <button>
-          Remove Recipe
-        </button>
-      </div>
+        Add Recipe
+      </button>
+      <button
+        data-testid="remove-recipe-button"
+      >
+        Remove Recipe
+      </button>
     </div>
   </div>,
   "debug": [Function],
