@@ -1,21 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Adapter from "enzyme-adapter-react-16";
-import { shallow, configure } from "enzyme";
+import { render, cleanup } from "react-testing-library";
 import Day from "./index";
-
-configure({ adapter: new Adapter() });
 
 describe("Day Component", function() {
   let wrapper;
-
   beforeEach(function() {
-    wrapper = shallow(<Day recipes={[1, 2]} title="Title" />);
+    wrapper = render(<Day title="Title" />);
   });
 
   it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<Day recipes={[1, 2]} title="Title" />, div);
+    ReactDOM.render(<Day title="Title" />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
