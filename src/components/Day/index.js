@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import Popover from "../Popover";
+import usePopover from "../Popover/usePopover";
+import { AvailableRecipesContext } from "../AvailableRecipesContext";
 import "./style.scss";
 
 const Day = props => {
+  const availableRecipes = useContext(AvailableRecipesContext);
   const [recipes, setRecipes] = useState([]);
+  const popover = usePopover(false);
+
+  useEffect(() => {
+    console.log(availableRecipes);
+  }, [availableRecipes]);
 
   const addRecipe = () => {
+    popover.toggle();
     let newRecipes = [...recipes];
     newRecipes.push(1);
     setRecipes(newRecipes);
@@ -31,6 +41,7 @@ const Day = props => {
       <button onClick={removeRecipe} data-testid="remove-recipe-button">
         Remove Recipe
       </button>
+      {popover.isShown && <Popover />}
     </div>
   );
 };
