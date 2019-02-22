@@ -6,7 +6,7 @@ const Recipes = props => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("https://acfk.fabian-kaegy.de/wp-json/wp/v2/acfk_recipes")
+    fetch("https://acfk.fabian-kaegy.de/wp-json/wp/v2/acfk_recipes?_embed")
       .then(response => {
         if (response.ok) {
           return response.json();

@@ -1,26 +1,28 @@
 import React, { useState, useContext, useEffect } from "react";
 import Popover from "../Popover";
 import usePopover from "../Popover/usePopover";
+import Button from "../Button";
+import Meal from "../Meal";
 import { AvailableRecipesContext } from "../AvailableRecipesContext";
 import "./style.scss";
 
 const Day = props => {
   const availableRecipes = useContext(AvailableRecipesContext);
   const [recipes, setRecipes] = useState([]);
-  const popover = usePopover(false);
+  const addRecipesPopover = usePopover(false);
 
   useEffect(() => {
-    console.log(availableRecipes);
+    setRecipes(availableRecipes);
   }, [availableRecipes]);
 
   const addRecipe = () => {
-    popover.toggle();
+    addRecipesPopover.toggle();
     let newRecipes = [...recipes];
-    newRecipes.push(1);
+    // add new recipe here
     setRecipes(newRecipes);
   };
 
-  const removeRecipe = () => {
+  const removeRecipe = atIndex => {
     let newRecipes = [...recipes];
     newRecipes.pop();
     setRecipes(newRecipes);
@@ -32,16 +34,18 @@ const Day = props => {
       </header>
       <div className="recipes" data-testid="recipes">
         {recipes.map((recipe, key) => (
-          <span key={key}>A Recipe will go here</span>
+          <Meal recipe={recipe} key={key} />
         ))}
+        <Button onClick={addRecipe} plus={true} data-testid="add-recipe-button">
+          {addRecipesPopover.isShown && (
+            <Popover>
+              {recipes.map((recipe, key) => (
+                <Meal recipe={recipe} key={key} />
+              ))}
+            </Popover>
+          )}
+        </Button>
       </div>
-      <button onClick={addRecipe} data-testid="add-recipe-button">
-        Add Recipe
-      </button>
-      <button onClick={removeRecipe} data-testid="remove-recipe-button">
-        Remove Recipe
-      </button>
-      {popover.isShown && <Popover />}
     </div>
   );
 };

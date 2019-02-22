@@ -1,0 +1,33 @@
+.meal {
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  padding: 15px;
+  transition: 150ms ease;
+  h3,
+  .servings,
+  .time {
+    color: #ffffff;
+  }
+
+  svg {
+    padding: 0 5px;
+  }
+
+  .servings {
+    float: right;
+  }
+  .time {
+    float: left;
+  }
+  h3 {
+    margin-top: 80px;
+    clear: both;
+    margin-bottom: 0;
+  }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+}
