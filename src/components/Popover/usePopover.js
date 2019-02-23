@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const usePopover = props => {
-  const [isShown, setIsShown] = useState(props);
+	const [isShown, setIsShown] = useState(props);
 
-  const toggle = () => {
-    setIsShown(!isShown);
-  };
-  return { isShown, setIsShown, toggle };
+	const toggle = () => {
+		setIsShown(!isShown);
+	};
+	return { isShown, setIsShown, toggle };
 };
 
 export default usePopover;
