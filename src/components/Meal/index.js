@@ -6,6 +6,7 @@ const Meal = props => {
 	const { recipe } = props;
 	return (
 		<div
+			onClick={props.onClick}
 			className="meal"
 			style={{
 				background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url(${

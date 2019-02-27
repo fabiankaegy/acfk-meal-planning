@@ -11,13 +11,12 @@ const Day = props => {
 	const [recipes, setRecipes] = useState([]);
 	const addRecipesPopover = usePopover(false);
 
-	useEffect(() => {
-		setRecipes(availableRecipes);
-	}, [availableRecipes]);
+	// useEffect(() => {
+	// 	setRecipes(availableRecipes);
+	// }, [availableRecipes]);
 
-	const addRecipe = () => {
-		addRecipesPopover.toggle();
-		let newRecipes = [...recipes];
+	const addRecipe = recipe => {
+		let newRecipes = [...recipes, recipe];
 		// add new recipe here
 		setRecipes(newRecipes);
 	};
@@ -36,12 +35,14 @@ const Day = props => {
 				{recipes.map((recipe, key) => (
 					<Meal recipe={recipe} key={key} />
 				))}
-				<Button onClick={addRecipe} plus={true} data-testid="add-recipe-button">
+				<Button onClick={addRecipesPopover.toggle} plus={true} data-testid="add-recipe-button">
 					{addRecipesPopover.isShown && (
 						<Popover>
-							{recipes.map((recipe, key) => (
-								<Meal recipe={recipe} key={key} />
-							))}
+							{addRecipesPopover.isShown &&
+								availableRecipes &&
+								availableRecipes.map((recipe, key) => (
+									<Meal onClick={() => addRecipe(recipe)} recipe={recipe} key={key} />
+								))}
 						</Popover>
 					)}
 				</Button>
