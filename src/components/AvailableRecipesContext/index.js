@@ -17,7 +17,7 @@ const Recipes = props => {
 				}
 			})
 			.then(recipes => {
-				const recipeData = recipes.map(recipe => {
+				const recipesData = recipes.map(recipe => {
 					return Object.assign(
 						{},
 						{
@@ -37,8 +37,8 @@ const Recipes = props => {
 						}
 					);
 				});
-				console.log(recipeData);
-				setRecipes(recipeData);
+				console.log(recipesData);
+				setRecipes(recipesData);
 			})
 			.catch(error => console.error(error));
 	}, []);
