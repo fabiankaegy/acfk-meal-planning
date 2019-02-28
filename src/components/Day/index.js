@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext, useReducer } from 'react';
 import Popover from '../Popover';
 import usePopover from '../Popover/usePopover';
 import Button from '../Button';
@@ -6,9 +6,31 @@ import Meal from '../Meal';
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import './style.scss';
 
+const recipeReducer = (recipes, action) => {
+	switch (action.type) {
+		case 'add': {
+			return [
+				...recipes,
+				{
+					...action.payload,
+					identfier: Symbol(),
+				},
+			];
+		}
+		case 'remove': {
+			return recipes.filter(recipe => recipe.identfier !== action.payload.identfier);
+		}
+		case 'clear': {
+			return [];
+		}
+		default:
+			return recipes;
+	}
+};
+
 const Day = props => {
 	const availableRecipes = useContext(AvailableRecipesContext);
-	const [recipes, setRecipes] = useState([]);
+	const [recipes, dispatchRecipes] = useReducer(recipeReducer, []);
 	const addRecipesPopover = usePopover(false);
 
 	// useEffect(() => {
@@ -16,15 +38,11 @@ const Day = props => {
 	// }, [availableRecipes]);
 
 	const addRecipe = recipe => {
-		let newRecipes = [...recipes, recipe];
-		// add new recipe here
-		setRecipes(newRecipes);
+		dispatchRecipes({ type: 'add', payload: recipe });
 	};
 
-	const removeRecipe = atIndex => {
-		let newRecipes = [...recipes];
-		newRecipes.pop();
-		setRecipes(newRecipes);
+	const removeRecipe = identifier => {
+		dispatchRecipes({ type: 'remove', payload: identifier });
 	};
 	return (
 		<div className="day">
@@ -33,7 +51,13 @@ const Day = props => {
 			</header>
 			<div className="recipes" data-testid="recipes">
 				{recipes.map((recipe, key) => (
-					<Meal recipe={recipe} key={key} />
+					<Meal
+						recipe={recipe}
+						key={key}
+						onClick={() => {
+							removeRecipe(recipe);
+						}}
+					/>
 				))}
 				<Button onClick={addRecipesPopover.toggle} plus={true} data-testid="add-recipe-button">
 					{addRecipesPopover.isShown && (
