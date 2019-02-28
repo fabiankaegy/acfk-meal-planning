@@ -5,6 +5,8 @@ const AvailableRecipesContext = React.createContext();
 const Recipes = props => {
 	const [recipes, setRecipes] = useState([]);
 
+	//	const [state, setState] = useState({});
+
 	useEffect(() => {
 		fetch('https://acfk.fabian-kaegy.de/wp-json/wp/v2/acfk_recipes?_embed')
 			.then(response => {
@@ -15,7 +17,28 @@ const Recipes = props => {
 				}
 			})
 			.then(recipes => {
-				setRecipes(recipes);
+				const recipeData = recipes.map(recipe => {
+					return Object.assign(
+						{},
+						{
+							id: recipe.id,
+							title: recipe.title.rendered,
+							content: recipe.content.rendered,
+							description: recipe.meta.acfk_description,
+							slug: recipe.slug,
+							prepTime: recipe.meta.acfk_prep_time,
+							cookingTime: recipe.meta.acfk_cooking_time,
+							servings: recipe.meta.acfk_servings,
+							ingredients: recipe.meta.acfk_ingredients,
+							image: {
+								src: recipe._embedded['wp:featuredmedia'][0].source_url,
+								alt: recipe._embedded['wp:featuredmedia'][0].alt_text,
+							},
+						}
+					);
+				});
+				console.log(recipeData);
+				setRecipes(recipeData);
 			})
 			.catch(error => console.error(error));
 	}, []);
