@@ -22,27 +22,4 @@ describe('Day Component', function() {
 	it('matches snapshot', () => {
 		expect(wrapper).toMatchSnapshot();
 	});
-
-	it('adds recipe after add recipe button is clicked', () => {
-		const { getByTestId } = wrapper;
-		const addRecipeButton = getByTestId('add-recipe-button');
-		const recipes = getByTestId('recipes').childNodes;
-
-		const lengthBefore = recipes.length;
-		fireEvent.click(addRecipeButton);
-		expect(recipes.length).toBe(lengthBefore + 1);
-	});
-
-	it('removes recipe after remove recipe button is clicked', () => {
-		const { getByTestId } = wrapper;
-		const addRecipeButton = getByTestId('add-recipe-button');
-		const removeRecipeButton = getByTestId('remove-recipe-button');
-		const recipes = getByTestId('recipes').childNodes;
-
-		fireEvent.click(addRecipeButton);
-		expect(recipes.length).toBe(1);
-
-		fireEvent.click(removeRecipeButton);
-		expect(recipes.length).toBe(0);
-	});
 });

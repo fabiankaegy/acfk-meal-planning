@@ -38,11 +38,12 @@ const Day = props => {
 
 	useEffect(() => {
 		const recipes = localStorage.getItem(`${props.title}-recipes`);
-		console.log(recipes);
-		dispatchRecipes({
-			type: 'populate',
-			payload: JSON.parse(recipes),
-		});
+		if (recipes) {
+			dispatchRecipes({
+				type: 'populate',
+				payload: JSON.parse(recipes),
+			});
+		}
 	}, []);
 
 	useEffect(() => {

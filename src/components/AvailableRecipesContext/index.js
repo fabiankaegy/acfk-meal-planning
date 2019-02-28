@@ -5,8 +5,6 @@ const AvailableRecipesContext = React.createContext();
 const Recipes = props => {
 	const [recipes, setRecipes] = useState([]);
 
-	//	const [state, setState] = useState({});
-
 	useEffect(() => {
 		fetch('https://acfk.fabian-kaegy.de/wp-json/wp/v2/acfk_recipes?_embed')
 			.then(response => {
@@ -37,7 +35,6 @@ const Recipes = props => {
 						}
 					);
 				});
-				console.log(recipesData);
 				setRecipes(recipesData);
 			})
 			.catch(error => console.error(error));

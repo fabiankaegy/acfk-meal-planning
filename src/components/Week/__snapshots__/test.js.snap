@@ -21,17 +21,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -46,17 +74,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -71,17 +127,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -96,17 +180,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -121,17 +233,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -146,17 +286,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -171,17 +339,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -202,17 +398,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -227,17 +451,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -252,17 +504,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -277,17 +557,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -302,17 +610,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -327,17 +663,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
         <div
           class="day"
@@ -352,17 +716,45 @@ Object {
           <div
             class="recipes"
             data-testid="recipes"
-          />
-          <button
-            data-testid="add-recipe-button"
           >
-            Add Recipe
-          </button>
-          <button
-            data-testid="remove-recipe-button"
-          >
-            Remove Recipe
-          </button>
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -384,17 +776,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -409,17 +829,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -434,17 +882,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -459,17 +935,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -484,17 +988,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -509,17 +1041,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
       <div
         class="day"
@@ -534,17 +1094,45 @@ Object {
         <div
           class="recipes"
           data-testid="recipes"
-        />
-        <button
-          data-testid="add-recipe-button"
         >
-          Add Recipe
-        </button>
-        <button
-          data-testid="remove-recipe-button"
-        >
-          Remove Recipe
-        </button>
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </div>,
