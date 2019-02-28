@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from 'react';
+import React, { useContext, useReducer, useEffect } from 'react';
 import Popover from '../Popover';
 import usePopover from '../Popover/usePopover';
 import Button from '../Button';
@@ -13,7 +13,7 @@ const recipeReducer = (recipes, action) => {
 				...recipes,
 				{
 					...action.payload,
-					identfier: Symbol(),
+					identfier: Date.now(),
 				},
 			];
 		}
@@ -22,6 +22,9 @@ const recipeReducer = (recipes, action) => {
 		}
 		case 'clear': {
 			return [];
+		}
+		case 'populate': {
+			return [...action.payload];
 		}
 		default:
 			return recipes;
@@ -33,9 +36,18 @@ const Day = props => {
 	const [recipes, dispatchRecipes] = useReducer(recipeReducer, []);
 	const addRecipesPopover = usePopover(false);
 
-	// useEffect(() => {
-	// 	setRecipes(availableRecipes);
-	// }, [availableRecipes]);
+	useEffect(() => {
+		const recipes = localStorage.getItem(`${props.title}-recipes`);
+		console.log(recipes);
+		dispatchRecipes({
+			type: 'populate',
+			payload: JSON.parse(recipes),
+		});
+	}, []);
+
+	useEffect(() => {
+		localStorage.setItem(`${props.title}-recipes`, JSON.stringify(recipes));
+	}, [recipes]);
 
 	const addRecipe = recipe => {
 		dispatchRecipes({ type: 'add', payload: recipe });
