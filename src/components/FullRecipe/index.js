@@ -6,9 +6,9 @@ const FullRecipe = props => {
 		<div>
 			<div className="close-btn">x</div>
 
-			<aside className="ingredients">{props.recipe.ingredients}</aside>
+			<aside className="ingredients">{props.recipe.ingredients[0]}</aside>
 
-			<div className="lg-img">{props.recipe.image}</div>
+			<div className="lg-img">{props.recipe.image.src}</div>
 			<div className="description">{props.recipe.description}</div>
 			<div className="timing">
 				<IconWithText icon="" text="My Time" />
