@@ -6,7 +6,7 @@ const Wrapper = () => {
 	const availableRecipes = useContext(AvailableRecipesContext);
 
 	return (
-		<div className="App">{availableRecipes[0] && <FullRecipe recipe={availableRecipes[0]} />}</div>
+		<div className="App">{availableRecipes[0] && <FullRecipe recipe={availableRecipes[1]} />}</div>
 	);
 };
 
