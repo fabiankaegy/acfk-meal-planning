@@ -1,0 +1,110 @@
+.App {
+	padding: 50px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+svg {
+	height: 25px;
+	width: 25px;
+	color: #fff;
+	background: #ff0000;
+	border-radius: 100%;
+	padding: 10px;
+}
+.recipe-full > * {
+	background-color: #fefefe;
+	color: #333;
+	border-radius: 5px;
+	padding: 20px;
+	/* needed for the floated layout*/
+	margin-bottom: 10px;
+}
+div.recipe-full {
+	display: grid;
+	max-width: 760px;
+	border: 2px solid #333;
+	display: grid;
+	grid-gap: 10px;
+}
+section.recipe-info {
+	grid-column: auto;
+}
+div.close-btn {
+	background: #ced770;
+	color: #fff;
+	width: 150px;
+	height: 30px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+	border-radius: 20px;
+}
+aside.sidebar {
+	grid-column: auto;
+}
+aside div.ingredients {
+	font-style: italic;
+	font-size: 1em;
+}
+div.ingredients h3 {
+	border-bottom: 1px solid #333;
+	margin-bottom: 0px;
+	width: 100%;
+	display: block;
+}
+div.timing {
+	background: #333;
+}
+div.icon-info p {
+	font-size: 1.25em;
+	color: #333;
+	font-weight: bold;
+}
+div.icon-info span.icon {
+	margin-right: 10px;
+	display: inline-flex;
+}
+div.description {
+	margin: 20px 0;
+}
+div.lg-img img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	overflow: hidden;
+	border: 5px solid #333;
+	border-radius: 25px;
+}
+div.instructions {
+	margin: 20px 0;
+}
+@media screen and (min-width: 500px) {
+	/* no grid support? */
+	.sidebar {
+		float: right;
+		width: 19.1489%;
+	}
+	.section {
+		float: left;
+		width: 79.7872%;
+	}
+	.recipe-full {
+		margin: 0 auto;
+		grid-template-columns: 3fr 1fr;
+	}
+	.header {
+		grid-column: 1 / -1;
+		/* needed for the floated layout */
+		clear: both;
+	}
+}
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+	.recipe-full > * {
+		max-width: 760px;
+		margin: 0;
+	}
+}

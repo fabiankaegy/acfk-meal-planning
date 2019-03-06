@@ -1,0 +1,1183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Week Component matches snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="week"
+      >
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Monday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Tuesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Wednesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Thursday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Friday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Saturday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Sunday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section
+        class="week"
+      >
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Monday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Tuesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Wednesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Thursday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Friday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Saturday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Sunday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="week"
+    >
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Monday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Tuesday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Wednesday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Thursday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Friday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Saturday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Sunday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
