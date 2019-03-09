@@ -18,7 +18,7 @@ const FullRecipe = props => {
 				</div>
 				<div className="ingredients">
 					<h3>Ingredients</h3>
-					<p>{props.recipe.ingredients[0]}</p>
+					<p dangerouslySetInnerHTML={{ __html: props.recipe.ingredients }} />
 				</div>
 				<div className="timing">
 					<IconInfo icon={<People />} text={props.recipe.servings} />
@@ -27,8 +27,12 @@ const FullRecipe = props => {
 				</div>
 			</aside>
 			<section className="recipe-info">
-				<div className="description">{props.recipe.description}</div>
-				<div className="instructions">{props.recipe.content}</div>
+				<div className="description">
+					<p dangerouslySetInnerHTML={{ __html: props.recipe.description }} />
+				</div>
+				<div className="instructions">
+					<p dangerouslySetInnerHTML={{ __html: props.recipe.content }} />
+				</div>
 			</section>
 		</div>
 	);
