@@ -1,12 +1,10 @@
 import React from 'react';
 
-const IconInfo = ({ icon, text }) => {
+const IconInfo = ({ icon, text, unit }) => {
 	return (
 		<div className="icon-info">
-			<p>
-				<span class="icon">{icon}</span>
-				{text}
-			</p>
+			<p className="icon">{icon}</p>
+			<p className="info">{text} {unit}</p>
 		</div>
 	);
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 import IconInfo from '../IconInfo';
-import { Clock } from '../../icons';
-import { Plus } from '../../icons';
-import { People } from '../../icons';
+import { Cook } from '../../icons';
+import { Prep } from '../../icons';
+import { Serve } from '../../icons';
 
 const FullRecipe = props => {
 	return (
@@ -12,6 +12,14 @@ const FullRecipe = props => {
 					<img src={props.recipe.image.src} alt={props.recipe.image.alt} />
 				</div>
 			</header>
+			<section className="recipe-info">
+				<div className="description">
+					<p dangerouslySetInnerHTML={{ __html: props.recipe.description }} />
+				</div>
+				<div className="instructions">
+					<p dangerouslySetInnerHTML={{ __html: props.recipe.content }} />
+				</div>
+			</section>
 			<aside className="sidebar">
 				<div className="close-btn">
 					<a href="#">BACK</a>
@@ -21,19 +29,11 @@ const FullRecipe = props => {
 					<p dangerouslySetInnerHTML={{ __html: props.recipe.ingredients }} />
 				</div>
 				<div className="timing">
-					<IconInfo icon={<People />} text={props.recipe.servings} />
-					<IconInfo icon={<Plus />} text={props.recipe.prepTime} />
-					<IconInfo icon={<Clock />} text={props.recipe.cookingTime} />
+					<IconInfo icon={<Serve />} text={props.recipe.servings} unit="per"/>
+					<IconInfo icon={<Prep />} text={props.recipe.prepTime} unit="min" />
+					<IconInfo icon={<Cook />} text={props.recipe.cookingTime} unit="min" />
 				</div>
 			</aside>
-			<section className="recipe-info">
-				<div className="description">
-					<p dangerouslySetInnerHTML={{ __html: props.recipe.description }} />
-				</div>
-				<div className="instructions">
-					<p dangerouslySetInnerHTML={{ __html: props.recipe.content }} />
-				</div>
-			</section>
 		</div>
 	);
 };
