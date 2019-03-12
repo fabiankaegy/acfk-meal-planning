@@ -15,12 +15,17 @@ class App extends React.Component {
 		return (
 				<Router>
 				<div className="App">
+				<Recipes>
 					<ul>
 						<li><Link to="/">Home</Link></li>
 						<li><Link to="/recipe">Recipe</Link></li>
 					</ul>
 					<Route exact path="/" component={ Week } />
-					<Route exact path="/recipe" component={ RecipeView } />
+					<Route 
+					exact path="/recipe" 
+					render={(props) => <RecipeView {...props} />}
+					/>
+				</Recipes>
 				</div>
 				</Router>
 		);

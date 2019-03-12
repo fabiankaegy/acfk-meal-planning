@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+	Link
+  } from 'react-router-dom'
 import './style.scss';
 import { Clock, People } from '../../icons';
 
@@ -31,7 +34,7 @@ const Meal = props => {
 				</span>
 				<span className="line" />
 				<span>
-					<a href="#view">View</a>
+				<Link to="/recipe">View</Link>
 				</span>
 			</span>
 		</div>

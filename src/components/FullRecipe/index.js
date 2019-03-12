@@ -25,7 +25,7 @@ const FullRecipe = props => {
 			</section>
 			<aside className="sidebar">
 				<div className="close-btn">
-				<Link to="/">BACK</Link>
+				BACK
 				</div>
 				<div className="ingredients">
 					<h3>Ingredients</h3>
