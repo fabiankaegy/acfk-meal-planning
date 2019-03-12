@@ -1,17 +1,30 @@
 import React, { useContext, useEffect } from 'react';
-import Week from '../Week';
-import { Recipes } from '../AvailableRecipesContext';
+import {
+	BrowserRouter as Router,
+	Route,
+	Link
+  } from 'react-router-dom'
 import './style.scss';
-import Wrapper from '../Wrapper';
+import { Recipes } from '../AvailableRecipesContext';
+import Week from '../Week';
+import RecipeView from '../RecipeView';
 
-const App = () => {
-	return (
-		<div className="App">
-			<Recipes>
-				<Wrapper />
-			</Recipes>
-		</div>
-	);
+class App extends React.Component {
+
+	render () {
+		return (
+				<Router>
+				<div className="App">
+					<ul>
+						<li><Link to="/">Home</Link></li>
+						<li><Link to="/recipe">Recipe</Link></li>
+					</ul>
+					<Route exact path="/" component={ Week } />
+					<Route exact path="/recipe" component={ RecipeView } />
+				</div>
+				</Router>
+		);
+	}
 };
 
 export default App;

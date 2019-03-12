@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+	Link
+  } from 'react-router-dom'
 import IconInfo from '../IconInfo';
 import { Cook } from '../../icons';
 import { Prep } from '../../icons';
@@ -22,7 +25,7 @@ const FullRecipe = props => {
 			</section>
 			<aside className="sidebar">
 				<div className="close-btn">
-					<a href="#">BACK</a>
+				<Link to="/">BACK</Link>
 				</div>
 				<div className="ingredients">
 					<h3>Ingredients</h3>
