@@ -11,7 +11,7 @@ function FullRecipe(props) {
 		<div className="recipe-full">
 			<header>
 				<div className="lg-img">
-					<img src={props.recipe.image.src} alt={props.recipe.image.alt} />
+					{props.recipe.image && <img src={props.recipe.image.src} alt={props.recipe.image.alt} />}
 				</div>
 			</header>
 			<section className="recipe-info">

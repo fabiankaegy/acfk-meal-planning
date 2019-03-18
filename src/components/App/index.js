@@ -1,13 +1,16 @@
 import React from 'react';
 import Router from '../Router';
 import './style.scss';
+import { Recipes } from '../AvailableRecipesContext';
 
 class App extends React.Component {
 	render() {
 		return (
-			<Router>
-				<div className="App" />
-			</Router>
+			<Recipes>
+				<Router>
+					<div className="App" />
+				</Router>
+			</Recipes>
 		);
 	}
 }
