@@ -9,7 +9,7 @@
 svg {
 	height: 100px;
 	width: 100px;
-	background: #CED707;
+	background: #ced707;
 	border-radius: 25px;
 }
 div.icon-info {
@@ -23,7 +23,7 @@ div.icon-info .icon {
 	padding: 0;
 }
 div.icon-info .info {
-    font-size: 1.5em;
+	font-size: 1.5em;
 	font-weight: 800;
 	margin: 0;
 }
@@ -35,38 +35,38 @@ div.icon-info .info {
 	padding: 10px;
 	text-align: center;
 	font-size: 1.5em;
-	background: #CED707;
-	color: #FFF;
+	background: #ced707;
+	color: #fff;
 	border-radius: 10px;
 	font-weight: 800;
 	display: block;
 }
-.close-btn a{
-	color: #FFF;
+.close-btn a {
+	color: #fff;
 	text-decoration: none;
 }
 
 /* no grid support? */
 .sidebar {
 	float: right;
-	width: 19.1489%;
+	width: 29.1489%;
 	border-left: 2px solid #444;
-	background: #DEDEDE;
+	background: #dedede;
 	border: 2px solid #444;
 	padding: 25px;
 }
 section {
 	float: left;
-	width: 79.7872%;
-	background: #DEDEDE;
-	border: 2px solid #444;
-	padding: 10px 25px;
+	width: 69.7872%;
+	background: #fefefe;
+	//border: 2px solid #444;
+	padding: 10px 100px;
 }
 header img {
 	object-fit: cover;
 	width: 100%;
 	//max-width: 100%;
-	max-height: 100px;
+	max-height: 200px;
 	border-radius: 5px;
 }
 /* make a grid */
@@ -74,7 +74,7 @@ header img {
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 1fr 20%;
+	grid-template-columns: 1fr 30%;
 	grid-gap: 10px;
 }
 
@@ -90,7 +90,7 @@ header {
 	grid-column: 1 / -1;
 	/* needed for the floated layout */
 	clear: both;
-	background-color: #CED707;
+	background-color: #ced707;
 	padding: 10px;
 }
 

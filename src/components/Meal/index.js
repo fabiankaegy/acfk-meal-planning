@@ -1,12 +1,10 @@
 import React from 'react';
-import {
-	Link
-  } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import './style.scss';
 import { Clock, People } from '../../icons';
 
 const Meal = props => {
-	const { prepTime, cookingTime, servings, image, title } = props.recipe;
+	const { prepTime, cookingTime, servings, image, title, id } = props.recipe;
 	return (
 		<div
 			onClick={props.onClick}
@@ -34,7 +32,14 @@ const Meal = props => {
 				</span>
 				<span className="line" />
 				<span>
-				<Link to="/recipe">View</Link>
+					<Link
+						key={id}
+						to={{
+							pathname: `/recipe/${id}`,
+						}}
+					>
+						View
+					</Link>
 				</span>
 			</span>
 		</div>
