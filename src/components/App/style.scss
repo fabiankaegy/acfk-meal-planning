@@ -7,31 +7,47 @@
 	box-sizing: border-box;
 }
 svg {
-	height: 100px;
-	width: 100px;
-	background: #ced707;
-	border-radius: 25px;
+	height: 25px;
+	width: 25px;
+	border-radius: 5px;
+	background-color: #ced707;
 }
-div.icon-info {
-	text-align: center;
-	margin-bottom: 25px;
-	padding-bottom: 25px;
+ul.icon-info {
+	margin: 20px 0;
+	padding: 20px 0;
 	border-bottom: 1px dotted #ccc;
+	list-style-type: none;
 }
-div.icon-info .icon {
-	margin: 0;
-	padding: 0;
+ul.icon-info .icon {
+	margin-right: 20px;
+	display: inline-flex;
 }
-div.icon-info .info {
-	font-size: 1.5em;
-	font-weight: 800;
-	margin: 0;
+ul.icon-info span.info {
+	padding: 2px 0px 0px 5px;
+	font-size: 12px;
+	font-weight: 700;
 }
-.ingredients p {
-	word-wrap: break-word;
+.ingredients {
+	background: #f7f7f7;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 25px;
+	max-width: 75%;
+}
+.ingredients h3 {
+	margin: 0 0 20px 0;
+}
+.ingredients ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.ingredients li {
+	border-bottom: 1px dotted #d9d9d9;
+	padding: 10px 0;
 }
 .close-btn {
-	max-width: 100%;
+	max-width: 50%;
 	padding: 10px;
 	text-align: center;
 	font-size: 1.5em;
@@ -50,15 +66,11 @@ div.icon-info .info {
 .sidebar {
 	float: right;
 	width: 29.1489%;
-	border-left: 2px solid #444;
-	background: #dedede;
-	border: 2px solid #444;
 	padding: 25px;
 }
 section {
 	float: left;
 	width: 69.7872%;
-	background: #fefefe;
 	//border: 2px solid #444;
 	padding: 10px 100px;
 }
@@ -90,7 +102,6 @@ header {
 	grid-column: 1 / -1;
 	/* needed for the floated layout */
 	clear: both;
-	background-color: #ced707;
 	padding: 10px;
 }
 

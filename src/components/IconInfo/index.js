@@ -2,10 +2,12 @@ import React from 'react';
 
 const IconInfo = ({ icon, text, unit }) => {
 	return (
-		<div className="icon-info">
-			<p className="icon">{icon}</p>
-			<p className="info">{text} {unit}</p>
-		</div>
+		<li className="icon">
+			{icon}
+			<span className="info">
+				{text} {unit}
+			</span>
+		</li>
 	);
 };
 
