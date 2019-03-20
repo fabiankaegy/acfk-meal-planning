@@ -50,6 +50,16 @@ const RecipeList = props => {
 		localStorage.setItem(`${props.title}-recipes`, JSON.stringify(recipes));
 	}, [recipes]);
 
+<<<<<<< HEAD
+=======
+	const addRecipe = recipe => {
+		dispatchRecipes({ type: 'add', payload: recipe });
+	};
+
+	const removeRecipe = identifier => {
+		dispatchRecipes({ type: 'remove', payload: identifier });
+	};
+>>>>>>> ac-full-recipe-view
 	return (
 		<div className="recipeContainer">
 			<header className="recipeListHeader">
@@ -57,11 +67,20 @@ const RecipeList = props => {
 			</header>
 			<div className="recipeListContainer">
 				<ul className="recipeList">
+<<<<<<< HEAD
 					{availableRecipes.map((recipe, key) => (
 						<li className="recipeListItem" key={key}>
 							<Meal recipe={recipe} key={key} />
 						</li>
 					))}
+=======
+					{availableRecipes &&
+						availableRecipes.map((recipe, key) => (
+							<li className="recipeListItem" key={key}>
+								<Meal onClick={() => addRecipe(recipe)} recipe={recipe} key={key} />
+							</li>
+						))}
+>>>>>>> ac-full-recipe-view
 				</ul>
 			</div>
 		</div>
