@@ -2,6 +2,8 @@ import React from 'react';
 import Router from '../Router';
 import './style.scss';
 import { Recipes } from '../AvailableRecipesContext';
+//import RecipeList from '../RecipeList';
+//import Week from '../Week';
 
 class App extends React.Component {
 	render() {
