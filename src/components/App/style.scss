@@ -6,47 +6,86 @@
 *:after {
 	box-sizing: border-box;
 }
-svg {
+
+/* Recipe Listing */
+
+.recipeContainer {
+	width: 90%;
+	margin: 25px auto;
+	background-color: #f2f2f2;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	box-sizing: border-box;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.recipeContainer header {
+	background-color: #cde663;
+	padding: 15px 20px;
+	color: black;
+	border-radius: 15px 15px 0px 0px;
+	h2 {
+		padding: 0;
+		margin: 0;
+	}
+}
+ul.recipeList {
+	margin-top: 20px;
+	padding: 0;
+}
+li.recipeListItem {
+	max-width: 150px;
+	max-height: 100px;
+	list-style-type: none;
+	display: inline-flex;
+	margin: 0 10px;
+}
+
+/* Full Recipe - 
+Grid layout help from Rachel Andrews & Jen Simmons 
+*/
+
+.recipeFull svg {
 	height: 25px;
 	width: 25px;
 	border-radius: 5px;
 	background-color: #ced707;
 }
-ul.icon-info {
+.recipeFull ul.iconInfo {
 	margin: 20px 0;
 	padding: 20px 0;
 	border-bottom: 1px dotted #ccc;
 	list-style-type: none;
 }
-ul.icon-info .icon {
+.recipeFull ul.iconInfo .icon {
 	margin-right: 20px;
 	display: inline-flex;
 }
-ul.icon-info span.info {
+.recipeFull ul.iconInfo span.info {
 	padding: 2px 0px 0px 5px;
 	font-size: 12px;
 	font-weight: 700;
 }
-.ingredients {
+.recipeFull .ingredients {
 	background: #f7f7f7;
 	padding: 20px;
 	border-radius: 10px;
 	margin-top: 25px;
 	max-width: 75%;
 }
-.ingredients h3 {
+.recipeFull .ingredients h3 {
 	margin: 0 0 20px 0;
 }
-.ingredients ul {
+.recipeFull .ingredients ul {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
 }
-.ingredients li {
+.recipeFull .ingredients li {
 	border-bottom: 1px dotted #d9d9d9;
 	padding: 10px 0;
 }
-.close-btn {
+.recipeFull .closeBtn {
 	max-width: 50%;
 	padding: 10px;
 	text-align: center;
@@ -57,7 +96,7 @@ ul.icon-info span.info {
 	font-weight: 800;
 	display: block;
 }
-.close-btn a {
+.recipeFull .closeBtn a {
 	color: #fff;
 	text-decoration: none;
 }
@@ -68,21 +107,22 @@ ul.icon-info span.info {
 	width: 29.1489%;
 	padding: 25px;
 }
-section {
+.recipeInfo {
 	float: left;
 	width: 69.7872%;
 	//border: 2px solid #444;
 	padding: 10px 100px;
 }
-header img {
+.recipeHeader img {
 	object-fit: cover;
 	width: 100%;
 	//max-width: 100%;
 	max-height: 200px;
 	border-radius: 5px;
 }
+
 /* make a grid */
-.recipe-full {
+.recipeFull {
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
@@ -90,7 +130,7 @@ header img {
 	grid-gap: 10px;
 }
 
-.recipe-full > * {
+.recipeFull > * {
 	color: #222;
 	border-radius: 5px;
 	font-size: 1em;
@@ -98,7 +138,7 @@ header img {
 	margin-bottom: 10px;
 }
 
-header {
+.recipeFull header {
 	grid-column: 1 / -1;
 	/* needed for the floated layout */
 	clear: both;
@@ -107,7 +147,7 @@ header {
 
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
 @supports (display: grid) {
-	.recipe-full > * {
+	.recipeFull > * {
 		width: auto;
 		margin: 0;
 	}

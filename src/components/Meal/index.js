@@ -28,7 +28,7 @@ const Meal = props => {
 			<h3 dangerouslySetInnerHTML={{ __html: title }} />
 			<span className="hover-overlay">
 				<span>
-					<a href="#edit">Edit</a>
+					<a href="#add">Add</a>
 				</span>
 				<span className="line" />
 				<span>

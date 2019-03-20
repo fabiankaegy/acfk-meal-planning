@@ -31,17 +31,17 @@ function FullRecipe(props) {
 	));
 
 	return (
-		<div className="recipe-full">
-			<header>
-				<div className="lg-img">{image && <img src={image.src} alt={image.alt} />}</div>
+		<div className="recipeFull">
+			<header className="recipeHeader">
+				<div className="lgImg">{image && <img src={image.src} alt={image.alt} />}</div>
 			</header>
-			<section className="recipe-info">
+			<section className="recipeInfo">
 				<div className="description">
 					<h1 dangerouslySetInnerHTML={{ __html: title }} />
 					<p dangerouslySetInnerHTML={{ __html: description }} />
 				</div>
 				<div className="timing">
-					<ul className="icon-info">
+					<ul className="iconInfo">
 						<IconInfo icon={<Serve />} text={servings} unit="per" />
 						<IconInfo icon={<Prep />} text={prepTime} unit="min" />
 						<IconInfo icon={<Cook />} text={cookingTime} unit="min" />
@@ -53,7 +53,7 @@ function FullRecipe(props) {
 				</div>
 			</section>
 			<aside className="sidebar">
-				<div className="close-btn">
+				<div className="closeBtn">
 					<Link to={{ pathname: `/` }}>BACK</Link>
 				</div>
 				<div className="ingredients">
