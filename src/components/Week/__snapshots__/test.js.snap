@@ -1,432 +1,1183 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Week Component matches snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Week />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={0}
-          recipes={
-            Array [
-              1,
-              2,
-              3,
-              4,
-              5,
-            ]
-          }
-          removeRecipe={[Function]}
-          title="Monday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={1}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Tuesday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={2}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Wednesday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={3}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Thursday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={4}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Friday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={5}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Saturday"
-        />,
-        <Day
-          addRecipe={[Function]}
-          clearRecipes={[Function]}
-          id={7}
-          recipes={Array []}
-          removeRecipe={[Function]}
-          title="Sunday"
-        />,
-      ],
-      "className": "week",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 0,
-          "recipes": Array [
-            1,
-            2,
-            3,
-            4,
-            5,
-          ],
-          "removeRecipe": [Function],
-          "title": "Monday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 1,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Tuesday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 2,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Wednesday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "3",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 3,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Thursday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "4",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 4,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Friday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "5",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 5,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Saturday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "6",
-        "nodeType": "function",
-        "props": Object {
-          "addRecipe": [Function],
-          "clearRecipes": [Function],
-          "id": 7,
-          "recipes": Array [],
-          "removeRecipe": [Function],
-          "title": "Sunday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "section",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={0}
-            recipes={
-              Array [
-                1,
-                2,
-                3,
-                4,
-                5,
-              ]
-            }
-            removeRecipe={[Function]}
-            title="Monday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={1}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Tuesday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={2}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Wednesday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={3}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Thursday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={4}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Friday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={5}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Saturday"
-          />,
-          <Day
-            addRecipe={[Function]}
-            clearRecipes={[Function]}
-            id={7}
-            recipes={Array []}
-            removeRecipe={[Function]}
-            title="Sunday"
-          />,
-        ],
-        "className": "week",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 0,
-            "recipes": Array [
-              1,
-              2,
-              3,
-              4,
-              5,
-            ],
-            "removeRecipe": [Function],
-            "title": "Monday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 1,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Tuesday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 2,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Wednesday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "3",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 3,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Thursday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "4",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 4,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Friday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "5",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 5,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Saturday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "6",
-          "nodeType": "function",
-          "props": Object {
-            "addRecipe": [Function],
-            "clearRecipes": [Function],
-            "id": 7,
-            "recipes": Array [],
-            "removeRecipe": [Function],
-            "title": "Sunday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "section",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="week"
+      >
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Monday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Tuesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Wednesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Thursday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Friday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Saturday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Sunday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section
+        class="week"
+      >
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Monday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Tuesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Wednesday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Thursday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Friday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Saturday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="day"
+        >
+          <header
+            class="header"
+          >
+            <h2>
+              Sunday
+            </h2>
+          </header>
+          <div
+            class="recipes"
+            data-testid="recipes"
+          >
+            <div
+              class="button-wrapper"
+            >
+              <button
+                class="button"
+              >
+                <svg
+                  height="41.511"
+                  viewBox="0 0 41.511 41.511"
+                  width="41.511"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    data-name="Gruppe 1"
+                    fill="none"
+                    id="Gruppe_1"
+                    stroke="#707070"
+                    stroke-linecap="round"
+                    stroke-width="5"
+                    transform="translate(2.5 2.5)"
+                  >
+                    <line
+                      data-name="Linie 1"
+                      id="Linie_1"
+                      transform="translate(18.255)"
+                      y2="36.511"
+                    />
+                    <line
+                      data-name="Linie 2"
+                      id="Linie_2"
+                      transform="rotate(90 9.128 27.383)"
+                      y2="36.511"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="week"
+    >
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Monday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Tuesday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Wednesday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Thursday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Friday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Saturday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="day"
+      >
+        <header
+          class="header"
+        >
+          <h2>
+            Sunday
+          </h2>
+        </header>
+        <div
+          class="recipes"
+          data-testid="recipes"
+        >
+          <div
+            class="button-wrapper"
+          >
+            <button
+              class="button"
+            >
+              <svg
+                height="41.511"
+                viewBox="0 0 41.511 41.511"
+                width="41.511"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Gruppe 1"
+                  fill="none"
+                  id="Gruppe_1"
+                  stroke="#707070"
+                  stroke-linecap="round"
+                  stroke-width="5"
+                  transform="translate(2.5 2.5)"
+                >
+                  <line
+                    data-name="Linie 1"
+                    id="Linie_1"
+                    transform="translate(18.255)"
+                    y2="36.511"
+                  />
+                  <line
+                    data-name="Linie 2"
+                    id="Linie_2"
+                    transform="rotate(90 9.128 27.383)"
+                    y2="36.511"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
 }
 `;

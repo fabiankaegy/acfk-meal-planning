@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Adapter from "enzyme-adapter-react-16";
-import { shallow, configure } from "enzyme";
+import { render, cleanup } from "react-testing-library";
 import Week from "./index";
-
-configure({ adapter: new Adapter() });
 
 describe("Week Component", function() {
   let wrapper;
 
   beforeEach(function() {
-    wrapper = shallow(<Week />);
+    wrapper = render(<Week />);
   });
 
   it("renders without crashing", () => {
