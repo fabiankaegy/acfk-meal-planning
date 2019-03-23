@@ -9,7 +9,7 @@ const Week = props => {
 
 	useEffect(() => {
 		window.addEventListener('resize', event => {
-			window.innerWidth > 800 ? setIsDesktop(true) : setIsDesktop(false);
+			window.innerWidth > 600 ? setIsDesktop(true) : setIsDesktop(false);
 		});
 
 		return () => {
