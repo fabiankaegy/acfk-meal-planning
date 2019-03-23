@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Day from '../Day';
 import './style.scss';
 
@@ -19,24 +19,27 @@ const Week = props => {
 		};
 	});
 
-	return isDesktop ? (
+	return (
 		<section className="week">
-			{days.map((name, key) => (
-				<Day key={key} title={name} />
-			))}
-		</section>
-	) : (
-		<section className="mobile-calendar">
-			{days.map((name, key) => (
-				<button
-					onClick={() => {
-						setActiveDay({ name: name, key: key });
-					}}
-				>
-					{name}
-				</button>
-			))}
-			<Day title={activeDay.name} key={activeDay.key} />
+			{isDesktop ? (
+				days.map((name, key) => <Day key={key} title={name} />)
+			) : (
+				<Fragment>
+					<div className="navigation">
+						{days.map((name, key) => (
+							<button
+								onClick={() => {
+									setActiveDay({ name: name, key: key });
+								}}
+								key={key}
+							>
+								{name}
+							</button>
+						))}
+					</div>
+					<Day title={activeDay.name} key={activeDay.key} />
+				</Fragment>
+			)}
 		</section>
 	);
 };
