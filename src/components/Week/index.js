@@ -7,17 +7,18 @@ const Week = props => {
 	const [activeDay, setActiveDay] = useState({ name: days[0], key: 0 });
 	const [isDesktop, setIsDesktop] = useState(false);
 
+	const setSize = () => {
+		window.innerWidth > 600 ? setIsDesktop(true) : setIsDesktop(false);
+	};
+
 	useEffect(() => {
-		window.addEventListener('resize', event => {
-			window.innerWidth > 600 ? setIsDesktop(true) : setIsDesktop(false);
-		});
+		setSize();
+		window.addEventListener('resize', setSize);
 
 		return () => {
-			window.removeEventListener('resize', event => {
-				window.innerWidth > 800 ? setIsDesktop(true) : setIsDesktop(false);
-			});
+			window.removeEventListener('resize', setSize);
 		};
-	});
+	}, []);
 
 	return (
 		<section className="week">
