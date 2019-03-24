@@ -21,9 +21,9 @@ const Week = props => {
 	}, []);
 
 	return (
-		<section className="week">
+		<ul className="week">
 			{isDesktop ? (
-				days.map((name, key) => <Day key={key} title={name} />)
+				days.map((name, key) => <Day index={key} key={key} title={name} />)
 			) : (
 				<Fragment>
 					<div className="navigation">
@@ -38,10 +38,10 @@ const Week = props => {
 							</button>
 						))}
 					</div>
-					<Day title={activeDay.name} key={activeDay.key} />
+					<Day index={activeDay.key} title={activeDay.name} key={activeDay.key} />
 				</Fragment>
 			)}
-		</section>
+		</ul>
 	);
 };
 

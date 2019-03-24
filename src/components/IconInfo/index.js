@@ -1,11 +1,12 @@
 import React from 'react';
 
-const IconInfo = ({ icon, text, unit }) => {
+const IconInfo = ({ icon, text, unit, label }) => {
 	return (
 		<li className="icon">
 			{icon}
-			<span className="info">
-				{text} {unit}
+			<label className="screen-reader-text">{label}</label>
+			<span className="info" aria-hidden="true">
+				{`${text} ${unit}`}
 			</span>
 		</li>
 	);

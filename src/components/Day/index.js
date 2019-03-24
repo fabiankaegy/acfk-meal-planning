@@ -58,7 +58,7 @@ const Day = props => {
 		dispatchRecipes({ type: 'remove', payload: identifier });
 	};
 	return (
-		<div className="day">
+		<li className="day">
 			<header className="header">
 				<h2>{props.title}</h2>
 			</header>
@@ -67,24 +67,36 @@ const Day = props => {
 					<Meal
 						recipe={recipe}
 						key={key}
+						tabIndex={props.index}
 						onClick={() => {
 							removeRecipe(recipe);
 						}}
 					/>
 				))}
-				<Button onClick={addRecipesPopover.toggle} plus={true} data-testid="add-recipe-button">
+				<Button
+					onClick={addRecipesPopover.toggle}
+					plus={true}
+					tabIndex={props.index}
+					label={`add recipe to ${props.title}`}
+					data-testid="add-recipe-button"
+				>
 					{addRecipesPopover.isShown && (
-						<Popover>
+						<Popover close={addRecipesPopover.toggle}>
 							{addRecipesPopover.isShown &&
 								availableRecipes &&
 								availableRecipes.map((recipe, key) => (
-									<Meal onClick={() => addRecipe(recipe)} recipe={recipe} key={key} />
+									<Meal
+										onClick={() => addRecipe(recipe)}
+										recipe={recipe}
+										key={key}
+										tabIndex={props.index}
+									/>
 								))}
 						</Popover>
 					)}
 				</Button>
 			</div>
-		</div>
+		</li>
 	);
 };
 
