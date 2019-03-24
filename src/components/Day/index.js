@@ -71,6 +71,7 @@ const Day = props => {
 						onClick={() => {
 							removeRecipe(recipe);
 						}}
+						showAdditionalInfo={true}
 					/>
 				))}
 				<Button
