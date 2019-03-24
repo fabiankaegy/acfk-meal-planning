@@ -1,4 +1,5 @@
 import React from 'react';
+import DocumentTitle from 'react-document-title';
 import { Link } from 'react-router-dom';
 import IconInfo from '../IconInfo';
 import { Cook } from '../../icons';
@@ -32,6 +33,7 @@ function FullRecipe(props) {
 
 	return (
 		<div className="recipeFull">
+			<DocumentTitle title={`${title} - Recipe`} />
 			<header className="recipeHeader">
 				<div className="lgImg">{image && <img src={image.src} alt={image.alt} />}</div>
 			</header>
