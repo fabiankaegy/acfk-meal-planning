@@ -74,7 +74,7 @@ const Day = props => {
 				))}
 				<Button onClick={addRecipesPopover.toggle} plus={true} data-testid="add-recipe-button">
 					{addRecipesPopover.isShown && (
-						<Popover>
+						<Popover close={addRecipesPopover.toggle}>
 							{addRecipesPopover.isShown &&
 								availableRecipes &&
 								availableRecipes.map((recipe, key) => (
