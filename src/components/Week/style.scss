@@ -1,15 +1,18 @@
 .week {
-  display: grid;
-  grid-gap: 25px;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-snap-points-x: repeat(225px);
-  grid-template-columns: repeat(1, 1fr);
-  @media (min-width: 600px) {
-    grid-template-columns: repeat(7, minmax(225px, 1fr));
-  }
-  > * {
-    scroll-snap-align: start;
-  }
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-gap: 25px;
+	width: 100%;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-snap-points-x: repeat(225px);
+	grid-template-columns: repeat(1, 1fr);
+	@media (min-width: 600px) {
+		grid-template-columns: repeat(7, minmax(225px, 1fr));
+	}
+	> * {
+		scroll-snap-align: start;
+	}
 }

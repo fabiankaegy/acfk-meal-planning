@@ -4,10 +4,16 @@ import './style.scss';
 import { Clock, People } from '../../icons';
 
 const Meal = props => {
-	const { prepTime, cookingTime, servings, image, title, id } = props.recipe;
+	const {
+		recipe: { prepTime, cookingTime, servings, image, title, id },
+		onClick,
+		tabIndex,
+	} = props;
 	return (
 		<div
-			onClick={props.onClick}
+			aria-label={`${title}, takes ${prepTime + cookingTime} minutes for ${servings} servings.`}
+			onClick={onClick}
+			tabIndex={tabIndex}
 			className="meal"
 			style={{
 				background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url(${
@@ -28,11 +34,12 @@ const Meal = props => {
 			<h3 dangerouslySetInnerHTML={{ __html: title }} />
 			<span className="hover-overlay">
 				<span>
-					<a href="#add">Add</a>
+					<button tabIndex={tabIndex}>Add</button>
 				</span>
 				<span className="line" />
 				<span>
 					<Link
+						tabIndex={tabIndex}
 						key={id}
 						to={{
 							pathname: `/recipe/${id}`,

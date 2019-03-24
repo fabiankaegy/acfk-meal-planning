@@ -34,29 +34,31 @@ function FullRecipe(props) {
 	return (
 		<div className="recipeFull">
 			<DocumentTitle title={`${title} - Recipe`} />
-			<header className="recipeHeader">
+			<header className="recipeHeader" role="banner">
 				<div className="lgImg">{image && <img src={image.src} alt={image.alt} />}</div>
 			</header>
-			<section className="recipeInfo">
+			<main className="recipeInfo">
 				<div className="description">
 					<h1 dangerouslySetInnerHTML={{ __html: title }} />
 					<p dangerouslySetInnerHTML={{ __html: description }} />
 				</div>
 				<div className="timing">
 					<ul className="iconInfo">
-						<IconInfo icon={<Serve />} text={servings} unit="per" />
-						<IconInfo icon={<Prep />} text={prepTime} unit="min" />
-						<IconInfo icon={<Cook />} text={cookingTime} unit="min" />
+						<IconInfo icon={<Serve />} text={servings} unit="people" label={`Servings`} />
+						<IconInfo icon={<Prep />} text={prepTime} unit="min" label={`Prep time`} />
+						<IconInfo icon={<Cook />} text={cookingTime} unit="min" label={`Cooking Time`} />
 					</ul>
 				</div>
 				<div className="instructions">
 					<h2>Instructions:</h2>
 					<p dangerouslySetInnerHTML={{ __html: content }} />
 				</div>
-			</section>
+			</main>
 			<aside className="sidebar">
 				<div className="closeBtn">
-					<Link to={{ pathname: `/` }}>BACK</Link>
+					<Link aria-label="Go Back to the Overview" to={{ pathname: `/` }}>
+						BACK
+					</Link>
 				</div>
 				<div className="ingredients">
 					<h3>Ingredients</h3>

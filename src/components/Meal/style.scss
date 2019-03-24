@@ -27,7 +27,9 @@
 		clear: both;
 		margin-bottom: 0;
 	}
-	&:hover {
+	&:hover,
+	&:focus,
+	&:focus-within {
 		transform: scale(1.05);
 		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 		.hover-overlay {

@@ -4,12 +4,15 @@ import { Plus, Minus } from '../../icons';
 
 const Button = props => {
 	return (
-		<div className="button-wrapper">
-			<button className="button" onClick={props.onClick}>
-				{props.plus ? <Plus /> : <Minus />}
-			</button>
+		<button
+			className="button"
+			onClick={props.onClick}
+			aria-label={props.label}
+			tabIndex={props.tabIndex}
+		>
+			{props.plus ? <Plus /> : <Minus />}
 			{props.children}
-		</div>
+		</button>
 	);
 };
 
