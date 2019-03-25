@@ -54,6 +54,10 @@ const Day = props => {
 		dispatchRecipes({ type: 'add', payload: recipe });
 	};
 
+	const clearDay = () => {
+		dispatchRecipes({ type: 'clear' });
+	};
+
 	const removeRecipe = identifier => {
 		dispatchRecipes({ type: 'remove', payload: identifier });
 	};
@@ -61,6 +65,7 @@ const Day = props => {
 		<li className="day">
 			<header className="header">
 				<h2>{props.title}</h2>
+				<button onClick={clearDay}>clear</button>
 			</header>
 			<div className="recipes" data-testid="recipes">
 				{recipes.map((recipe, key) => (
