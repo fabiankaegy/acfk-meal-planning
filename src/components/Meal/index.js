@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
 import { Clock, People } from '../../icons';
@@ -8,6 +8,7 @@ const Meal = props => {
 		recipe: { prepTime, cookingTime, servings, image, title, id },
 		onClick,
 		tabIndex,
+		showAdditionalInfo = false,
 	} = props;
 	return (
 		<div
@@ -22,14 +23,18 @@ const Meal = props => {
 				backgroundSize: 'cover',
 			}}
 		>
-			<span className="time">
-				<Clock />
-				{`${prepTime + cookingTime} min.`}
-			</span>
-			<span className="servings">
-				<People />
-				{`${servings} serv.`}
-			</span>
+			{showAdditionalInfo && (
+				<Fragment>
+					<span className="time">
+						<Clock />
+						{`${prepTime + cookingTime} min.`}
+					</span>
+					<span className="servings">
+						<People />
+						{`${servings} serv.`}
+					</span>
+				</Fragment>
+			)}
 
 			<h3 dangerouslySetInnerHTML={{ __html: title }} />
 			<span className="hover-overlay">
