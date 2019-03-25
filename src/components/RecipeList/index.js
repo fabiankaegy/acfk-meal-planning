@@ -1,4 +1,4 @@
-import React, { useContext, useReducer, useEffect } from 'react';
+import React, { useContext } from 'react';
 //import Popover from '../Popover';
 //import usePopover from '../Popover/usePopover';
 //import Button from '../Button';
@@ -6,49 +6,8 @@ import Meal from '../Meal';
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import '../App/style.scss';
 
-const recipeReducer = (recipes, action) => {
-	switch (action.type) {
-		case 'add': {
-			return [
-				...recipes,
-				{
-					...action.payload,
-					identfier: Date.now(),
-				},
-			];
-		}
-		case 'remove': {
-			return recipes.filter(recipe => recipe.identfier !== action.payload.identfier);
-		}
-		case 'clear': {
-			return [];
-		}
-		case 'populate': {
-			return [...action.payload];
-		}
-		default:
-			return recipes;
-	}
-};
-
-const RecipeList = props => {
+const RecipeList = ({ setRecipeToAdd }) => {
 	const availableRecipes = useContext(AvailableRecipesContext);
-	const [recipes, dispatchRecipes] = useReducer(recipeReducer, []);
-	//const addRecipesPopover = usePopover(false);
-
-	useEffect(() => {
-		const recipes = localStorage.getItem(`${props.title}-recipes`);
-		if (recipes) {
-			dispatchRecipes({
-				type: 'populate',
-				payload: JSON.parse(recipes),
-			});
-		}
-	}, []);
-
-	useEffect(() => {
-		localStorage.setItem(`${props.title}-recipes`, JSON.stringify(recipes));
-	}, [recipes]);
 
 	return (
 		<div className="recipeContainer">
@@ -59,7 +18,13 @@ const RecipeList = props => {
 				<ul className="recipeList">
 					{availableRecipes.map((recipe, key) => (
 						<li className="recipeListItem" key={key}>
-							<Meal recipe={recipe} key={key} />
+							<Meal
+								recipe={recipe}
+								key={key}
+								onClick={() => {
+									setRecipeToAdd(recipe);
+								}}
+							/>
 						</li>
 					))}
 				</ul>

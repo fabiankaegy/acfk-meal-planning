@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import Day from '../Day';
 import './style.scss';
 
-const Week = props => {
+const Week = ({ recipeToAdd }) => {
 	const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 	const [activeDay, setActiveDay] = useState({ name: days[0], key: 0 });
 	const [isDesktop, setIsDesktop] = useState(false);
@@ -22,6 +22,8 @@ const Week = props => {
 
 	return (
 		<ul className="week">
+			{recipeToAdd.id && <p>What Day do you want to add it to?</p>}
+
 			{isDesktop ? (
 				days.map((name, key) => <Day index={key} key={key} title={name} />)
 			) : (
