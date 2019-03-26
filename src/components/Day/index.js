@@ -1,5 +1,5 @@
 import React, { useContext, useReducer, useEffect } from 'react';
-import Popover from '../Popover';
+import LocalPopover from '../Popover';
 import usePopover from '../Popover/usePopover';
 import Button from '../Button';
 import Meal from '../Meal';
@@ -50,6 +50,13 @@ const Day = props => {
 		localStorage.setItem(`${props.title}-recipes`, JSON.stringify(recipes));
 	}, [recipes]);
 
+	useEffect(() => {
+		if (props.recipeToAdd) {
+			addRecipe(props.recipeToAdd);
+			props.done();
+		}
+	}, [props.recipeToAdd]);
+
 	const addRecipe = recipe => {
 		dispatchRecipes({ type: 'add', payload: recipe });
 	};
@@ -87,7 +94,7 @@ const Day = props => {
 					data-testid="add-recipe-button"
 				>
 					{addRecipesPopover.isShown && (
-						<Popover close={addRecipesPopover.toggle}>
+						<LocalPopover close={addRecipesPopover.toggle}>
 							{addRecipesPopover.isShown &&
 								availableRecipes &&
 								availableRecipes.map((recipe, key) => (
@@ -98,7 +105,7 @@ const Day = props => {
 										tabIndex={props.index}
 									/>
 								))}
-						</Popover>
+						</LocalPopover>
 					)}
 				</Button>
 			</div>
