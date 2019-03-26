@@ -1,8 +1,9 @@
 import React, { useState, useEffect, Fragment } from 'react';
+import { AvailableRecipesContext, Recipes } from '../AvailableRecipesContext';
 import Day from '../Day';
 import './style.scss';
 
-const Week = ({ recipeToAdd }) => {
+const Week = ({ recipeToAdd }, props) => {
 	const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 	const [activeDay, setActiveDay] = useState({ name: days[0], key: 0 });
 	const [isDesktop, setIsDesktop] = useState(false);
@@ -20,9 +21,22 @@ const Week = ({ recipeToAdd }) => {
 		};
 	}, []);
 
+	useEffect(() => {
+		const recipeToAdd = localStorage.setItem(`${props.title}-recipes`, JSON.stringify(recipes));
+	}, [recipes]);
+
 	return (
 		<ul className="week">
-			{recipeToAdd.id && <p>What Day do you want to add it to?</p>}
+			{recipeToAdd.id && (
+				<div>
+					What Day do you want to add it to?
+					{days.map((name, key) => (
+						<li key={key}>
+							<button onClick={key => recipeToAdd(recipe)}>{name}</button>
+						</li>
+					))}
+				</div>
+			)}
 
 			{isDesktop ? (
 				days.map((name, key) => <Day index={key} key={key} title={name} />)
