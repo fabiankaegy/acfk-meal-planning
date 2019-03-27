@@ -32,15 +32,38 @@
 ul.recipeList {
 	margin-top: 20px;
 	padding: 0;
+	width: 100%;
 }
 li.recipeListItem {
-	max-width: 150px;
-	max-height: 100px;
 	list-style-type: none;
 	display: inline-flex;
 	margin: 0 10px;
 }
-
+li.recipeListItem .meal {
+	height: 100px;
+	width: 100%;
+	max-width: 125px;
+}
+li.recipeListItem .meal .hover-overlay {
+	padding: 0 15px;
+}
+li.recipeListItem .meal .hover-overlay button {
+	border: none;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+li.recipeListItem .meal .hover-overlay a {
+	font-size: 14px;
+	font-weight: 700;
+}
+li.recipeListItem h3 {
+	font-size: 1em;
+	margin: 0;
+}
 /* Full Recipe - 
 Grid layout help from Rachel Andrews & Jen Simmons 
 */

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://fabiankaegy.github.io/acfk-meal-planning/",
   "dependencies": {
+    "@reach/dialog": "^0.1.4",
     "react": "^16.8.2",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.8.2",
