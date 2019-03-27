@@ -2,7 +2,7 @@
   "name": "acfk-recepies-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fabiankaegy.github.io/acfk-meal-planning/",
+  "homepage": "http://acfk-meal-planning.netlify.com/",
   "dependencies": {
     "react": "^16.8.2",
     "react-document-title": "^2.0.3",
