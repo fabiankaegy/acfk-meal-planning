@@ -1,4 +1,5 @@
 # acfk-meal-planning
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d961fa01-c0f4-4496-827a-4e23c634218c/deploy-status)](https://app.netlify.com/sites/acfk-meal-planning/deploys)
 
 A meal planning site that allows you to create your meal plan for the next week from a list of stored recipes.
 
