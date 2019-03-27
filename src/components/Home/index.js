@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import RecipeList from '../RecipeList';
 import Week from '../Week';
 
 const Home = props => {
-	const [recipeToAdd, setRecipeToAdd] = useState({});
-	useEffect(() => {
-		console.log(recipeToAdd);
-	}, [recipeToAdd]);
+	const [recipeToAdd, setRecipeToAdd] = useState(null);
+
 	return (
 		<div className="main">
-			<Week recipeToAdd={recipeToAdd} />
+			<Week
+				recipeToAdd={recipeToAdd}
+				done={() => {
+					setRecipeToAdd(null);
+				}}
+			/>
 			<RecipeList setRecipeToAdd={setRecipeToAdd} />
 		</div>
 	);

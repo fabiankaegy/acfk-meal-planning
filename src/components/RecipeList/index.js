@@ -1,7 +1,4 @@
 import React, { useContext } from 'react';
-//import Popover from '../Popover';
-//import usePopover from '../Popover/usePopover';
-//import Button from '../Button';
 import Meal from '../Meal';
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import '../App/style.scss';
