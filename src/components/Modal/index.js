@@ -39,7 +39,7 @@ const Modal = props => {
 	return (
 		<DialogOverlay>
 			<DialogContent>
-				<div className="popup" ref={modalRef}>
+				<div className="modal" ref={modalRef}>
 					{props.children}
 				</div>
 			</DialogContent>

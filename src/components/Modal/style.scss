@@ -1,31 +1,11 @@
-.popover {
-  z-index: 20;
-  width: 250px;
-  position: absolute;
-  background-color: hsl(0, 0%, 100%);
-  padding: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transform: translateY(0%);
-  top: 0%;
-  left: calc(100% + 10px);
-  border-radius: 15px;
-  max-height: 300px;
-  overflow-y: scroll;
-  overflow-x: visible;
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 0px;
-    width: 0px;
-    border: 10px solid transparent;
-    left: -20px;
-    border-right: 10px solid #ffffff;
-  }
-  > * {
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
+.modal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .meal {
+    min-width: 200px;
+    max-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 }
