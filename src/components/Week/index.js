@@ -1,89 +1,100 @@
+/**
+ * External dependencies
+ */
 import React, { useState, useEffect, Fragment } from 'react';
+/**
+ * Internal dependencies
+ */
 import Day from '../Day';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 import '@reach/dialog/styles.css';
 import './style.scss';
 
-const Week = ({ recipeToAdd, done }) => {
-	const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-	const [activeDay, setActiveDay] = useState({ name: days[0], key: 0 });
-	const [isDesktop, setIsDesktop] = useState(false);
-	const [selectedDay, setSelectedDay] = useState(null, { showDialog: true });
+const Week = ( { recipeToAdd, done } ) => {
+	const days = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ];
+	const [ activeDay, setActiveDay ] = useState( { name: days[ 0 ], key: 0 } );
+	const [ isDesktop, setIsDesktop ] = useState( false );
+	const [ selectedDay, setSelectedDay ] = useState( null, { showDialog: true } );
 
 	const setSize = () => {
-		window.innerWidth > 600 ? setIsDesktop(true) : setIsDesktop(false);
+		window.innerWidth > 600 ? setIsDesktop( true ) : setIsDesktop( false );
 	};
 
-	useEffect(() => {
+	useEffect( () => {
 		setSize();
-		window.addEventListener('resize', setSize);
+		window.addEventListener( 'resize', setSize );
 
 		return () => {
-			window.removeEventListener('resize', setSize);
+			window.removeEventListener( 'resize', setSize );
 		};
-	}, []);
+	}, [] );
 
-	useEffect(() => {
-		if (selectedDay) {
-			setSelectedDay(null);
+	useEffect( () => {
+		if ( selectedDay ) {
+			setActiveDay( { name: selectedDay, key: days.indexOf( selectedDay ) } );
 		}
-	}, [selectedDay]);
+
+		if ( selectedDay === activeDay.name ) {
+			setSelectedDay( null );
+		}
+	}, [ selectedDay, activeDay ] );
 
 	return (
 		<Fragment>
-			{recipeToAdd && (
+			{ recipeToAdd && (
 				<div>
 					<DialogOverlay>
 						<DialogContent
-							style={{
+							style={ {
 								border: 'solid 5px hsla(0, 0%, 0%, 0.5)',
 								borderRadius: '10px',
-							}}
+							} }
 						>
 							What Day do you want to add it to?
-							{days.map((name, key) => (
-								<li key={key}>
-									<button onClick={key => setSelectedDay(name)}>{name}</button>
+							{ days.map( ( name, key ) => (
+								<li key={ key }>
+									<button onClick={ () => setSelectedDay( name ) }>{ name }</button>
 								</li>
-							))}
+							) ) }
 						</DialogContent>
 					</DialogOverlay>
 				</div>
-			)}
+			) }
 			<ul className="week">
-				{isDesktop ? (
-					days.map((name, key) => (
+				{ isDesktop ? (
+					days.map( ( name, key ) => (
 						<Day
-							recipeToAdd={selectedDay === name && recipeToAdd}
-							done={done}
-							index={key}
-							key={key}
-							title={name}
+							recipeToAdd={ selectedDay === name && recipeToAdd }
+							done={ done }
+							index={ key }
+							key={ key }
+							title={ name }
 						/>
-					))
+					) )
 				) : (
 					<Fragment>
-						<div className="navigation">
-							{days.map((name, key) => (
+						<div className="navigation days-navgaiton">
+							{ days.map( ( name, key ) => (
 								<button
-									onClick={() => {
-										setActiveDay({ name: name, key: key });
-									}}
-									key={key}
+									className={ name === activeDay.name ? 'active' : undefined }
+									onClick={ () => {
+										setActiveDay( { name, key } );
+									} }
+									key={ key }
 								>
-									{name}
+									{ name.substring( 0, 2 ) }
 								</button>
-							))}
+							) ) }
 						</div>
 						<Day
-							recipeToAdd={selectedDay === activeDay.name && recipeToAdd}
-							done={done}
-							index={activeDay.key}
-							title={activeDay.name}
-							key={activeDay.key}
+							recipeToAdd={ selectedDay === activeDay.name && recipeToAdd }
+							done={ done }
+							index={ activeDay.key }
+							title={ activeDay.name }
+							key={ activeDay.key }
 						/>
 					</Fragment>
-				)}
+				) }
 			</ul>
 		</Fragment>
 	);

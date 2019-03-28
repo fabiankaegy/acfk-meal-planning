@@ -1,17 +1,23 @@
+/**
+ * External dependencies
+ */
 import React from 'react';
+/**
+ * Internal dependencies
+ */
 import './style.scss';
 import { Plus, Minus } from '../../icons';
 
-const Button = props => {
+const Button = ( props ) => {
 	return (
 		<button
 			className="button"
-			onClick={props.onClick}
-			aria-label={props.label}
-			tabIndex={props.tabIndex}
+			onClick={ props.onClick }
+			aria-label={ props.label }
+			tabIndex={ props.tabIndex }
 		>
-			{props.plus ? <Plus /> : <Minus />}
-			{props.children}
+			{ props.plus ? <Plus /> : <Minus /> }
+			{ props.children }
 		</button>
 	);
 };

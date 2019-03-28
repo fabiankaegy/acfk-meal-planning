@@ -1,20 +1,31 @@
+/**
+ * External dependencies
+ */
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+/**
+ * Internal dependencies
+ */
+import { Recipes } from '../AvailableRecipesContext';
 import NotFound from '../NotFound';
 import Home from '../Home';
 import Wrapper from '../Wrapper';
 import DocumentTitle from 'react-document-title';
+import ErrorMessage from '../ErrorMessage';
 
-const Router = props => {
+const Router = () => {
 	return (
 		<Fragment>
 			<DocumentTitle title="ACFK Mealplaning" />
 			<BrowserRouter>
-				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route path="/recipe/:id" component={Wrapper} />
-					<Route component={NotFound} />
-				</Switch>
+				<Recipes>
+					<Switch>
+						<Route exact path="/" component={ Home } />
+						<Route path="/recipe/:id" component={ Wrapper } />
+						<Route path="/error/:message/" component={ ErrorMessage } />
+						<Route component={ NotFound } />
+					</Switch>
+				</Recipes>
 			</BrowserRouter>
 		</Fragment>
 	);

@@ -1,25 +1,31 @@
+/**
+ * External dependencies
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render, cleanup, fireEvent } from 'react-testing-library';
+/**
+ * Internal dependencies
+ */
 import Day from './index';
 
-describe('Day Component', function() {
+describe( 'Day Component', function() {
 	let wrapper;
-	beforeEach(function() {
-		wrapper = render(<Day title="Title" />);
-	});
+	beforeEach( function() {
+		wrapper = render( <Day title="Title" /> );
+	} );
 
-	afterEach(() => {
-		cleanup(wrapper);
-	});
+	afterEach( () => {
+		cleanup( wrapper );
+	} );
 
-	it('renders without crashing', () => {
-		const div = document.createElement('div');
-		ReactDOM.render(<Day title="Title" />, div);
-		ReactDOM.unmountComponentAtNode(div);
-	});
+	it( 'renders without crashing', () => {
+		const div = document.createElement( 'div' );
+		ReactDOM.render( <Day title="Title" />, div );
+		ReactDOM.unmountComponentAtNode( div );
+	} );
 
-	it('matches snapshot', () => {
-		expect(wrapper).toMatchSnapshot();
-	});
-});
+	it( 'matches snapshot', () => {
+		expect( wrapper ).toMatchSnapshot();
+	} );
+} );

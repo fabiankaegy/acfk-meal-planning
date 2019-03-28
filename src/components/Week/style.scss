@@ -4,7 +4,8 @@
 	margin: 0;
 	display: grid;
 	grid-gap: 25px;
-	width: 100%;
+	width: 90%;
+	margin: 25px auto;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 	scroll-snap-points-x: repeat(225px);
@@ -14,5 +15,28 @@
 	}
 	> * {
 		scroll-snap-align: start;
+	}
+}
+
+.days-navgaiton {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	button {
+		flex-grow: 1;
+		padding: 10px;
+		border: 0;
+		background: #f8f8f8;
+		border-color: #cccccc;
+		border-left: 1px;
+		border-right: 1px;
+		&:hover {
+			filter: brightness(85%);
+			cursor: pointer;
+		}
+		&.active {
+			filter: brightness(85%);
+		}
 	}
 }
