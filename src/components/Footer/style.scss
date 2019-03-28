@@ -1,16 +1,17 @@
 .site-footer {
-  width: 100%;
-  height: 100px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 5%;
-  background: #f8f8f8;
-  > p {
-    padding: 0px !important;
-    margin: 5px 0;
-  }
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0 5%;
+	margin-top: 50px;
+	background: #f8f8f8;
+	> p {
+		padding: 0px !important;
+		margin: 5px 0;
+	}
 }
