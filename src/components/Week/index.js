@@ -17,7 +17,7 @@ const Week = ( { recipeToAdd, done } ) => {
 	const [ selectedDay, setSelectedDay ] = useState( null, { showDialog: true } );
 
 	const setSize = () => {
-		window.innerWidth > 600 ? setIsDesktop( true ) : setIsDesktop( false );
+		return window.innerWidth > 600 ? setIsDesktop( true ) : setIsDesktop( false );
 	};
 
 	useEffect( () => {
@@ -66,7 +66,7 @@ const Week = ( { recipeToAdd, done } ) => {
 						<Day
 							recipeToAdd={ selectedDay === name && recipeToAdd }
 							done={ done }
-							index={ key }
+							index={ key + 1 }
 							key={ key }
 							title={ name }
 						/>
@@ -89,7 +89,7 @@ const Week = ( { recipeToAdd, done } ) => {
 						<Day
 							recipeToAdd={ selectedDay === activeDay.name && recipeToAdd }
 							done={ done }
-							index={ activeDay.key }
+							index={ activeDay.key + 1 }
 							title={ activeDay.name }
 							key={ activeDay.key }
 						/>
