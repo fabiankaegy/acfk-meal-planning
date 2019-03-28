@@ -20,7 +20,7 @@ const Meal = ( props ) => {
 	return (
 		<div
 			aria-label={ `${ title }, takes ${ prepTime + cookingTime } minutes for ${ servings } servings.` }
-			tabIndex={ tabIndex }
+			tabIndex={ tabIndex ? tabIndex : -1 }
 			className="meal"
 			style={ {
 				background: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7) ), url(${
