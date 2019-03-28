@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render, cleanup, fireEvent } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 /**
  * Internal dependencies
  */

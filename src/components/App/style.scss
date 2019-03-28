@@ -1,258 +1,259 @@
 .App {
-	padding: 25px;
+  padding: 25px;
 }
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .main header {
-	width: 100%;
-	min-height: 75px;
-	background: #21759b;
-	color: #fff;
-	padding-top: 15px;
+  width: 100%;
+  min-height: 75px;
+  background: #21759b;
+  color: #fff;
+  padding-top: 15px;
 }
 .main header h1 {
-	font-size: 2em;
-	text-align: center;
-	margin: 0;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
 }
 /* Recipe Listing */
 
 .recipeContainer {
-	width: 90%;
-	margin: 25px auto;
-	background-color: #f2f2f2;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-	border-radius: 15px;
-	box-sizing: border-box;
-	overflow-x: scroll;
-	overflow-y: hidden;
+  width: 90%;
+  margin: 25px auto;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .recipeContainer header {
-	background-color: #cde663;
-	padding: 15px 20px;
-	color: black;
-	border-radius: 15px 15px 0px 0px;
-	h2 {
-		padding: 0;
-		margin: 0;
-	}
+  background-color: #cde663;
+  padding: 15px 20px;
+  color: black;
+  border-radius: 15px 15px 0px 0px;
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
 }
 ul.recipeList {
-	margin-top: 20px;
-	padding: 0;
-	width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: -10px;
 }
 li.recipeListItem {
-	list-style-type: none;
-	display: inline-flex;
-	margin: 0 10px;
+  list-style-type: none;
+  display: inline-flex;
+  margin: 10px;
 }
 li.recipeListItem .meal {
-	height: 100px;
-	width: 100%;
-	max-width: 125px;
+  height: 100px;
+  width: 100%;
+  max-width: 125px;
 }
 li.recipeListItem .meal .hover-overlay {
-	padding: 0 15px;
+  padding: 0 15px;
 }
 li.recipeListItem .meal .hover-overlay button {
-	border: none;
-	background: none;
-	color: #fff;
-	cursor: pointer;
-	font-weight: 700;
-	margin: 0;
-	padding: 0;
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 li.recipeListItem .meal .hover-overlay a {
-	font-size: 14px;
-	font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 }
 li.recipeListItem h3 {
-	font-size: 1em;
-	margin: 0;
+  font-size: 1em;
+  margin: 0;
 }
 /* Recipe Popup */
 
 [data-reach-dialog-content] {
-	background: white;
-	padding: 2rem;
-	//outline: none;
-	border: 10px solid rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
+  background: white;
+  padding: 2rem;
+  //outline: none;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 div.popup ul.dayList {
-	list-style-type: none;
-	margin: 0;
-	padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
 }
 ul.dayList li {
-	display: inline-block;
-	margin: 5px;
+  display: inline-block;
+  margin: 5px;
 }
 ul.dayList li button {
-	width: 75px;
-	padding: 5px;
-	color: #fff;
-	background: #21759b;
-	border-radius: 5px;
+  width: 75px;
+  padding: 5px;
+  color: #fff;
+  background: #21759b;
+  border-radius: 5px;
 }
 /* Full Recipe - 
 Grid layout help from Rachel Andrews & Jen Simmons 
 */
 
 .recipeFull svg {
-	height: 25px;
-	width: 25px;
-	border-radius: 5px;
-	background-color: #ced707;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: #ced707;
 }
 .recipeFull ul.iconInfo {
-	margin: 20px 0;
-	padding: 20px 0;
-	border-bottom: 1px dotted #ccc;
-	list-style-type: none;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+  list-style-type: none;
 }
 .recipeFull ul.iconInfo .icon {
-	margin-right: 20px;
-	display: inline-flex;
+  margin-right: 20px;
+  display: inline-flex;
 }
 .recipeFull ul.iconInfo span.info {
-	padding: 2px 0px 0px 5px;
-	font-size: 12px;
-	font-weight: 700;
+  padding: 2px 0px 0px 5px;
+  font-size: 12px;
+  font-weight: 700;
 }
 .recipeFull .ingredients {
-	background: #f7f7f7;
-	padding: 20px;
-	border-radius: 10px;
-	margin-top: 25px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 .recipeFull .ingredients h3 {
-	margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 .recipeFull .ingredients ul {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 .recipeFull .ingredients li {
-	border-bottom: 1px dotted #d9d9d9;
-	padding: 10px 0;
+  border-bottom: 1px dotted #d9d9d9;
+  padding: 10px 0;
 }
 .recipeFull .closeBtn {
-	max-width: 100%;
-	padding: 10px;
-	text-align: center;
-	font-size: 1.5em;
-	background: #21759b;
-	color: #fff;
-	border-radius: 10px;
-	font-weight: 800;
-	display: block;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  background: #21759b;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 800;
+  display: block;
 }
 .recipeFull .closeBtn a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .recipeFull .closeBtn:hover {
-	color: #222;
-	background: #ced707;
+  color: #222;
+  background: #ced707;
 }
 
 /* no grid support? */
 .sidebar {
-	float: right;
-	width: 29.1489%;
-	padding: 25px;
+  float: right;
+  width: 29.1489%;
+  padding: 25px;
 }
 .recipeInfo {
-	float: left;
-	width: 69.7872%;
-	padding: 10px 50px;
+  float: left;
+  width: 69.7872%;
+  padding: 10px 50px;
 }
 .recipeHeader img {
-	object-fit: cover;
-	width: 100%;
-	max-height: 200px;
-	border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+  border-radius: 5px;
 }
 
 /* make a grid */
 .recipeFull {
-	width: 90%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1 1fr;
-	grid-gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1 1fr;
+  grid-gap: 10px;
 }
 
 .recipeFull > * {
-	color: #222;
-	border-radius: 5px;
-	font-size: 1em;
-	/* needed for the floated layout*/
-	margin-bottom: 10px;
+  color: #222;
+  border-radius: 5px;
+  font-size: 1em;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
 }
 
 .recipeFull header {
-	grid-column: 1 / -1;
-	/* needed for the floated layout */
-	clear: both;
-	padding: 10px;
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+  padding: 10px;
 }
 
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
 @supports (display: grid) {
-	.recipeFull > * {
-		width: auto;
-		margin: 0;
-	}
+  .recipeFull > * {
+    width: auto;
+    margin: 0;
+  }
 }
 
 /* Misc Media Queries */
 @media only screen and (min-width: 600px) {
-	.main {
-		height: calc(100vh - 100px);
-	}
-	.recipeFull {
-		width: 90%;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 1fr 70%;
-		grid-gap: 10px;
-	}
+  .main {
+    height: calc(100vh - 100px);
+  }
+  .recipeFull {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 70%;
+    grid-gap: 10px;
+  }
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	white-space: nowrap;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
 }
