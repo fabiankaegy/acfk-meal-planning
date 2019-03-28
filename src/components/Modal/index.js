@@ -2,19 +2,22 @@
  * External dependencies
  */
 import React, { useRef, useEffect } from 'react';
+import { DialogOverlay, DialogContent } from '@reach/dialog';
+import '@reach/dialog/styles.css';
+
 /**
  * Internal dependencies
  */
 import './style.scss';
 
-const Popover = ( props ) => {
-	const popoverRef = useRef( null );
+const Modal = ( props ) => {
+	const modalRef = useRef( null );
 
 	const closeWhenClickedOutside = ( event ) => {
 		let targetElement = event.target; // clicked element
 
 		do {
-			if ( targetElement === popoverRef.current ) {
+			if ( targetElement === modalRef.current ) {
 				// This is a click inside. Do nothing, just return.
 				return;
 			}
@@ -33,18 +36,15 @@ const Popover = ( props ) => {
 		};
 	}, [] );
 
-	// take focus when opend
-	useEffect( () => {
-		if ( popoverRef.current.children[ 0 ] ) {
-			popoverRef.current.children[ 0 ].focus();
-		}
-	}, [ popoverRef.current ] );
-
 	return (
-		<div ref={ popoverRef } className="popover">
-			{ props.children }
-		</div>
+		<DialogOverlay>
+			<DialogContent>
+				<div ref={ modalRef }>
+					{ props.children }
+				</div>
+			</DialogContent>
+		</DialogOverlay>
 	);
 };
 
-export default Popover;
+export default Modal;

@@ -6,8 +6,8 @@ import React, { useState, useEffect, Fragment } from 'react';
  * Internal dependencies
  */
 import Day from '../Day';
-import { DialogOverlay, DialogContent } from '@reach/dialog';
-import '@reach/dialog/styles.css';
+import Modal from '../Modal';
+import useModal from '../Modal/useModal';
 import './style.scss';
 
 const Week = ( { recipeToAdd, done } ) => {
@@ -15,6 +15,8 @@ const Week = ( { recipeToAdd, done } ) => {
 	const [ activeDay, setActiveDay ] = useState( { name: days[ 0 ], key: 0 } );
 	const [ isDesktop, setIsDesktop ] = useState( false );
 	const [ selectedDay, setSelectedDay ] = useState( null, { showDialog: true } );
+
+	const addRecipesModal = useModal();
 
 	const setSize = () => {
 		return window.innerWidth > 600 ? setIsDesktop( true ) : setIsDesktop( false );
@@ -39,26 +41,28 @@ const Week = ( { recipeToAdd, done } ) => {
 		}
 	}, [ selectedDay, activeDay ] );
 
+	useEffect( () => {
+		if ( recipeToAdd ) {
+			addRecipesModal.setIsShown( true );
+		}
+	}, [ recipeToAdd ] );
+
+	const handleModalClose = () => {
+		done();
+		addRecipesModal.setIsShown( false );
+	};
+
 	return (
 		<Fragment>
-			{ recipeToAdd && (
-				<div>
-					<DialogOverlay>
-						<DialogContent
-							style={ {
-								border: 'solid 5px hsla(0, 0%, 0%, 0.5)',
-								borderRadius: '10px',
-							} }
-						>
-							What Day do you want to add it to?
-							{ days.map( ( name, key ) => (
-								<li key={ key }>
-									<button onClick={ () => setSelectedDay( name ) }>{ name }</button>
-								</li>
-							) ) }
-						</DialogContent>
-					</DialogOverlay>
-				</div>
+			{ recipeToAdd && addRecipesModal.isShown && (
+				<Modal close={ handleModalClose }>
+					What Day do you want to add it to?
+					{ days.map( ( name, key ) => (
+						<li key={ key }>
+							<button onClick={ () => setSelectedDay( name ) }>{ name }</button>
+						</li>
+					) ) }
+				</Modal>
 			) }
 			<ul className="week">
 				{ isDesktop ? (
