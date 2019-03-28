@@ -1,10 +1,16 @@
+/**
+ * External dependencies
+ */
 import React, { useContext } from 'react';
+/**
+ * Internal dependencies
+ */
 import Meal from '../Meal';
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import '../App/style.scss';
 
-const RecipeList = ({ setRecipeToAdd }) => {
-	const availableRecipes = useContext(AvailableRecipesContext);
+const RecipeList = ( { setRecipeToAdd } ) => {
+	const availableRecipes = useContext( AvailableRecipesContext );
 
 	return (
 		<div className="recipeContainer">
@@ -13,17 +19,18 @@ const RecipeList = ({ setRecipeToAdd }) => {
 			</header>
 			<div className="recipeListContainer">
 				<ul className="recipeList">
-					{availableRecipes.map((recipe, key) => (
-						<li className="recipeListItem" key={key}>
+					{ availableRecipes.map( ( recipe, key ) => (
+						<li className="recipeListItem" key={ key }>
 							<Meal
-								recipe={recipe}
-								key={key}
-								onClick={() => {
-									setRecipeToAdd(recipe);
-								}}
+								recipe={ recipe }
+								key={ key }
+								onClick={ () => {
+									setRecipeToAdd( recipe );
+								} }
+								buttonText="add"
 							/>
 						</li>
-					))}
+					) ) }
 				</ul>
 			</div>
 		</div>

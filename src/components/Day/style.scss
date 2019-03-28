@@ -3,14 +3,35 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   box-sizing: border-box;
+  overflow-y: hidden;
+  max-height: 75%;
+  min-height: 300px;
   .header {
     background-color: #cde663;
     padding: 15px 20px;
     color: black;
     border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h2 {
       padding: 0;
       margin: 0;
+    }
+    button {
+      background: transparent;
+      padding: 0;
+      border: none;
+      height: 20px;
+      width: 20px;
+      svg {
+        height: 100%;
+        width: 100%;
+        transform: rotate(45deg);
+        &:hover {
+          filter: brightness(85%);
+        }
+      }
     }
   }
   .recipes {
@@ -20,5 +41,7 @@
     > * {
       margin-bottom: 20px;
     }
+    max-height: calc(100% - 40px);
+    overflow-y: scroll;
   }
 }

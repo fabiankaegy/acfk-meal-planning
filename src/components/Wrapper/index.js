@@ -1,19 +1,21 @@
-import React, { useContext, useEffect } from 'react';
+/**
+ * External dependencies
+ */
+import React, { useContext } from 'react';
+/**
+ * Internal dependencies
+ */
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import FullRecipe from '../FullRecipe';
 
-const Wrapper = ({ match }) => {
-	const availableRecipes = useContext(AvailableRecipesContext);
+const Wrapper = ( { match } ) => {
+	const availableRecipes = useContext( AvailableRecipesContext );
 	const selectedRecipe = availableRecipes.filter(
-		recipe => recipe.id === parseFloat(match.params.id)
+		( recipe ) => recipe.id === parseFloat( match.params.id )
 	);
 
-	useEffect(() => {
-		console.log('Selected Recipe', selectedRecipe);
-	});
-
 	return (
-		<div className="App">{selectedRecipe[0] && <FullRecipe recipe={selectedRecipe[0]} />}</div>
+		<div className="App">{ selectedRecipe[ 0 ] && <FullRecipe recipe={ selectedRecipe[ 0 ] } /> }</div>
 	);
 };
 

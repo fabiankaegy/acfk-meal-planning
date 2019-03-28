@@ -3,21 +3,33 @@
 
 A meal planning site that allows you to create your meal plan for the next week from a list of stored recipes.
 
-## data structure
+## Application structure
+
+This react application uses the new hooks syntax, and is based around the usage of context. 
+Upon loading the page, the recipes will be fetched from the WordPress Rest API, transformed into a nicer data structure, and stored inside the `availableRecipeContext`. This context it wrapped around all the routes, so you can always have access to all the recipes from the server. This data will also never be modified. 
+
+The recipes you want to add to a day, are stored inside the day component itself, so each day is living in its own 'sandbox'. That way we can make sure, that there is no direct way of modifying the recipes in a day from outside the day.
+
+The only exposed way for you to interact with the data of the day, is by passing a prop called `recipeToAdd` into the day. This prop needs to be an object with the recipe and an callback function called done attached to it. Once the passed recipe is added to the day, the callback function will be called.
+
+Upon adding a recipe to a day, it will get an unique identifier, to enable having the same recipe multiple times in a day and still being able to remove each one individually.
+
+
+## WordPress data structure
 
 ### Custom Post Type
 name: `acfk_recipes`
  
 
 #### Meta Fields
-| meta_key             | data_type     | required |
-|----------------------|---------------|----------|
-| `acfk_prep_time`     | int (seconds) | true     |
-| `acfk_cooking_time`  | int (seconds) | true     |
-| `acfk_description`   | string        | true     |
-| `acfk_ingredients`   | string        | true     |
-| `acfk_servings`      | int           | true     |
-| `acfk_prep_time`     | int (seconds) | true     |
+| meta_key            | data_type     | required |
+| ------------------- | ------------- | -------- |
+| `acfk_prep_time`    | int (seconds) | true     |
+| `acfk_cooking_time` | int (seconds) | true     |
+| `acfk_description`  | string        | true     |
+| `acfk_ingredients`  | string        | true     |
+| `acfk_servings`     | int           | true     |
+| `acfk_prep_time`    | int (seconds) | true     |
 
 #### default fields
 - title
