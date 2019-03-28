@@ -9,3 +9,9 @@
     margin-right: 20px;
   }
 }
+
+[aria-modal="true"] {
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+}
