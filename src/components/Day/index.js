@@ -84,7 +84,8 @@ const Day = ( props ) => {
 	 */
 	useEffect( () => {
 		const localRecipes = window.localStorage.getItem( `${ props.title }-recipes` );
-		if ( recipes ) {
+
+		if ( localRecipes ) {
 			dispatchRecipes( {
 				type: 'populate',
 				payload: JSON.parse( localRecipes ),
