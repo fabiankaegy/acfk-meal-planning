@@ -10,37 +10,37 @@ import '@reach/dialog/styles.css';
  */
 import './style.scss';
 
-const Modal = props => {
-	const modalRef = useRef(null);
+const Modal = ( props ) => {
+	const modalRef = useRef( null );
 
-	const closeWhenClickedOutside = event => {
+	const closeWhenClickedOutside = ( event ) => {
 		let targetElement = event.target; // clicked element
 
 		do {
-			if (targetElement === modalRef.current) {
+			if ( targetElement === modalRef.current ) {
 				// This is a click inside. Do nothing, just return.
 				return;
 			}
 			// Go up the DOM
 			targetElement = targetElement.parentNode;
-		} while (targetElement);
+		} while ( targetElement );
 
 		// This is a click outside.
 		props.close();
 	};
 
-	useEffect(() => {
-		document.addEventListener('click', closeWhenClickedOutside);
+	useEffect( () => {
+		document.addEventListener( 'click', closeWhenClickedOutside );
 		return () => {
-			document.removeEventListener('click', closeWhenClickedOutside);
+			document.removeEventListener( 'click', closeWhenClickedOutside );
 		};
-	}, []);
+	}, [] );
 
 	return (
 		<DialogOverlay>
 			<DialogContent>
-				<div className="modal" ref={modalRef}>
-					{props.children}
+				<div className="modal" ref={ modalRef }>
+					{ props.children }
 				</div>
 			</DialogContent>
 		</DialogOverlay>
