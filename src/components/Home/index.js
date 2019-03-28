@@ -9,17 +9,20 @@ import RecipeList from '../RecipeList';
 import Week from '../Week';
 
 const Home = () => {
-	const [ recipeToAdd, setRecipeToAdd ] = useState( null );
+	const [recipeToAdd, setRecipeToAdd] = useState(null);
 
 	return (
 		<div className="main">
+			<header>
+				<h1>Weekly Meal Plan</h1>
+			</header>
 			<Week
-				recipeToAdd={ recipeToAdd }
-				done={ () => {
-					setRecipeToAdd( null );
-				} }
+				recipeToAdd={recipeToAdd}
+				done={() => {
+					setRecipeToAdd(null);
+				}}
 			/>
-			<RecipeList setRecipeToAdd={ setRecipeToAdd } />
+			<RecipeList setRecipeToAdd={setRecipeToAdd} />
 		</div>
 	);
 };
