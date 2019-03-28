@@ -1,14 +1,14 @@
 /**
  * External dependencies
  */
-import React, { useContext, useReducer, useEffect, useRef } from 'react';
+import React, { useContext, useReducer, useEffect } from 'react';
 /**
  * Internal dependencies
  */
-import usePopover from '../Popover/usePopover';
+import Modal from '../Modal';
+import useModal from '../Modal/useModal';
 import Button from '../Button';
 import Meal from '../Meal';
-import { DialogOverlay, DialogContent } from '@reach/dialog';
 import { AvailableRecipesContext } from '../AvailableRecipesContext';
 import { Plus } from '../../icons';
 import './style.scss';
@@ -48,36 +48,7 @@ const recipeReducer = ( recipes, action ) => {
 const Day = ( props ) => {
 	const availableRecipes = useContext( AvailableRecipesContext );
 	const [ recipes, dispatchRecipes ] = useReducer( recipeReducer, [] );
-	const addRecipesPopover = usePopover( false );
-	const modalRef = useRef();
-
-	const closeWhenClickedOutside = ( event ) => {
-		let targetElement = event.target; // clicked element
-
-		do {
-			if ( targetElement === modalRef.current ) {
-				// This is a click inside. Do nothing, just return.
-				return;
-			}
-			// Go up the DOM
-			targetElement = targetElement.parentNode;
-		} while ( targetElement );
-
-		// This is a click outside.
-		addRecipesPopover.toggle();
-	};
-
-	/*
-	 * Setup event listeners to detect wether or not the user clicked outside the modal
-	 */
-	useEffect( () => {
-		if ( addRecipesPopover.isShown ) {
-			document.addEventListener( 'click', closeWhenClickedOutside );
-		}
-		return () => {
-			document.removeEventListener( 'click', closeWhenClickedOutside );
-		};
-	}, [ addRecipesPopover.isShown ] );
+	const addRecipesModal = useModal();
 
 	/*
 	 * Populate the local day state from LocalStorage upon ititial mounting
@@ -158,23 +129,20 @@ const Day = ( props ) => {
 					/>
 				) ) }
 				<Button
-					onClick={ addRecipesPopover.toggle }
+					onClick={ addRecipesModal.toggle }
 					plus={ true }
 					tabIndex={ props.index }
 					label={ `add recipe to ${ props.title }` }
 					data-testid="add-recipe-button"
 				>
-					{ addRecipesPopover.isShown && (
-						<DialogOverlay>
-							<DialogContent>
-								<div ref={ modalRef }>
-
-									{ availableRecipes &&
+					{ addRecipesModal.isShown && (
+						<Modal close={ addRecipesModal.toggle }>
+							{ availableRecipes &&
 									availableRecipes.map( ( recipe, key ) => (
 										<Meal
 											onClick={ () => {
 												addRecipe( recipe );
-												addRecipesPopover.toggle();
+												addRecipesModal.toggle();
 											} }
 											buttonText="add"
 											recipe={ recipe }
@@ -182,9 +150,7 @@ const Day = ( props ) => {
 											tabIndex={ props.index }
 										/>
 									) ) }
-								</div>
-							</DialogContent>
-						</DialogOverlay>
+						</Modal>
 					) }
 				</Button>
 			</div>
