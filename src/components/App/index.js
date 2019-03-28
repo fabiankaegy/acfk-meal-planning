@@ -1,17 +1,21 @@
 /**
  * External dependencies
  */
-import React from 'react';
+import React, { Fragment } from 'react';
 /**
  * Internal dependencies
  */
 import Router from '../Router';
+import Footer from '../Footer';
 import './style.scss';
 
 class App extends React.Component {
 	render() {
 		return (
-			<Router />
+			<Fragment>
+				<Router />
+				<Footer />
+			</Fragment>
 		);
 	}
 }
